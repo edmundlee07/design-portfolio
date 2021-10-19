@@ -1,0 +1,579 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styleDesign.css">
+    <link rel="stylesheet" type="text/css" href="./styleAuby.css" />
+    <link rel="stylesheet" href="./breakpoints.css">
+    <script src="../appDesign.js"></script>
+    <title>Auby Case Study</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="cover" id="motion1">
+        <nav class="navbar">
+            <h1>
+                <a href="../../index.html">Edmund / Lee</a>
+            </h1>
+        </nav>
+        
+        <div class="container" onclick="openTopNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    
+        <div id="top-nav" class="top-nav">
+            <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+            <div class="overlay">
+                <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+            </div>
+        </div>
+        <div class="text-box" id="motion2">
+            <h2>Auby</h2>
+            <h4>Tailored Podcast Recommendations</h4>
+        </div>
+    </div>
+
+    <div class="wrapper1">
+        <div class="box0">
+            <h3 class="story1">
+                Auby - A remote product design internship at a newly founded startup 
+                - the goal was to go from idea to the app store MVP launch in 4 months
+            </h3>
+            <p class="story2">
+                The convergence between personality and podcasts. The small but ambitious 
+                team at Auby wanted to redefine podcast discovery from the ground up.
+                I took ownership in designing the product experience and branding that 
+                represents why Auby is unique in its own right
+            </p>
+            <p class="disclaimer">
+                Disclaimer: All thoughts and opinions expressed in this case study are my own. 
+                Current direction and product from Auby may have changed since the end 
+                of my internship
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper2">
+      
+        <div class="box01">
+            <h3 class="sub-heading">My Role</h3>
+        </div>
+
+        <div class="box1">   
+            <div class="Details">
+                <h4>Role</h4>       
+                <h2>Product Designer</h2>
+            </div>
+            <div class="Details2">
+                <h4>The Team</h4>
+                <h2>Product Manager / CEO</h2>
+                <h2>Back-end Developer</h2>
+                <h2>Flutter Developer</h2>
+                <h2>Data Scientist</h2>
+                <h2>Graphic Designer</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="Intro">
+                <p class="context">
+                    As part of my final co-op placement, it was a change of pace working 
+                    in a startup wearing many hats. At the time there was only a data 
+                    scientist, PM and product designer (me) running the whole show while 
+                    eventually other team members were hired.
+                </p>
+                <p class="context">
+                    I was responsible for everything product related: user research, 
+                    wireframing, prototypes, branding and user testing.
+                </p>
+                <p class="context">
+                    With such a small team it was a luxury working directly with the PM, 
+                    developers and graphic designer to iteratively improve upon the 
+                    design to bring the product vision to life.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper3">
+        <div class="box4">
+            <h3 class="sub-heading">Problem Definition</h3>
+            <p class="paragraph">
+                For many new podcast listeners, they have difficulties finding the 
+                right podcast episodes to listen to. Apps such as Apple podcast and 
+                Spotify overwhelm new listeners with hundreds of generic categories 
+                making it increasingly difficult to make a decision
+            </p>
+            <p class="paragraph">
+                Users end up feeling frustrated and impatient, constantly searching 
+                for new content. This results in the same default popular shows to be 
+                circulated while smaller channels receive less exposure.
+            </p>
+            <div class="current">
+                <img class="picture" src="./images/competitor.jpg" alt="">
+                <p class="description">
+                    Popular podcast app discover sections, it does the job but it’s just too generic
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper4">
+        <div class="box6">
+            <h2 class="heading">Design Challenges</h2>
+            <h3 class="sub-heading">Design Transparency</h3>
+            <p class="paragraph">
+                Data is key. In today’s day and age users are skeptical of the information 
+                collected so we need to be transparent of our intentions.
+                The more information the better the results but the question is, 
+                what type of information do we really need?
+            </p>
+            <h3 class="sub-heading">A Seamless Onboarding</h3>
+            <p class="paragraph">
+                We need to establish a balance between collecting enough 
+                information to make initial recommendations and ensuring 
+                a frictionless onboarding process. 
+            </p>
+            <h3 class="sub-heading">Enable Novice and Experienced Users</h3>
+            <p class="paragraph">
+                How can we balance the UX design of Auby to accommodate both 
+                new users to podcasts and experienced power users to use 
+                our platform?
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper5">
+        <div class="box7">
+            <h2 class="heading">Product Goals</h2>
+            <h3 class="sub-heading">Dynamic Recommendations</h3>
+            <p class="paragraph">
+                The product vision is for Auby to become a dynamic and 
+                evolving system. We need to figure out a way for users 
+                to control their preferences and adapt to a user’s ever 
+                changing listening habits.
+            </p>
+            <h3 class="sub-heading">Minimize User Drop-off</h3>
+            <p class="paragraph">
+                Something worse than a poorly designed app is a frustrating 
+                onboarding process. A seamless onboarding is key to convert 
+                new users and minimize drop-off. 
+            </p>
+            <h3 class="sub-heading">Recurring Actions</h3>
+            <p class="paragraph">
+                How can we keep the user coming back to using Auby 
+                through daily actions? Gamification? In-app rewards? 
+                Free money? 
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper6">
+        <div class="box9">
+            <h2 class="heading">From a User’s Perspective</h2>
+            <h3 class="sub-heading">User Insight</h3>
+            <p class="paragraph">
+                Due to COVID-19 conducting in person interviews was not an option. 
+                Luckily we had access to a service called Feedback Loop, an agile 
+                research platform for rapid consumer feedback.
+            </p>
+            <p class="paragraph">
+                The purpose of the user survey was to get better insights on 
+                where podcasts might fit in and what discouraged users from 
+                listening for non-podcast users. We also wanted to get a better 
+                understanding of the background and the mindset experienced 
+                podcast users went through when first discovering their love for podcasts.
+            </p>
+            <p class="paragraph">
+                We analyzed 408 user survey responses targeted at college educated individuals 
+                aged between 18-54 for a period of 1 week. Below are the highlights 
+                from an affinity diagramming session done on Miro.
+            </p>
+            <div class="testing">
+                <img class="picture" src="./images/user_research.jpg" loading="lazy" alt="">
+                <p class="description">Affinity diagramming highlights from Miro</p>
+            </div>
+        </div>
+
+        <div class="box11">
+            <h3 class="sub-heading">Developing Research Backed Personas</h3>
+            <p class="paragraph">
+                Based on the small sample size research collected above, I developed two 
+                generalized proto-personas to better empathize with who exactly 
+                I was designing for.
+            </p>
+            <div class="persona">
+                <img class="picture" src="./images/persona.jpg" loading="lazy" alt="">
+                <p class="description">Two fictional research backed proto-personas</p>
+            </div>
+        </div>
+
+        <div class="box12">
+            <h2 class="heading">Feature Roadmap</h2>
+            <h3 class="sub-heading">Focusing on what’s Important</h3>
+            <p class="paragraph">
+                Weeks of user research, competitive analysis and preliminary 
+                user podcast experience allowed the team to hone in on key features 
+                to prioritize. Building out a 2x2 feature matrix allowed PM, 
+                Engineering and design to compromise on a scalable product roadmap 
+                for the future.
+            </p>
+            <div class="testing">
+                <img class="picture" src="./images/matrix.jpg" alt="">
+                <p class="description">2x2 feature prioritization matrix </p>
+            </div>
+        </div>
+
+        <div class="box13">
+            <h2 class="heading">Iteration Work</h2>
+            <h3 class="sub-heading">Initial Ideation and Flow</h3>
+            <p class="paragraph">
+                After some research into other personalized experience apps 
+                I began sketching my ideas and variations of the user flow
+            </p>
+            <div class="servicedesign">
+                <img class="picture" src="./images/sketches.jpg" alt="">
+                <p class="description">Rough notebook sketches of my first iteration wireframes</p>
+            </div>
+        </div>
+
+        <div class="box14">
+            <h3 class="sub-heading">Proposed User Flow</h3>
+            <p class="paragraph">
+                After numerous rounds of internal feedback from engineering and PM, 
+                I arrived at the 4th iteration site map seen below. 
+                To the team, logically this flow made sense but since we haven’t 
+                done any user testing, we don’t actually know if this is the best 
+                answer to resolve our product or design goals. 
+            </p>
+        </div>
+
+        <div class="box15">
+            <div class="servicedesign">
+                <img class="picture" src="./images/site_map.jpg" alt="">
+                <p class="description">4th Iteration wireframes of user flow</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper7">
+        <div class="box160">
+            <h2 class="heading">Design Adjustments</h2>
+            <h3 class="sub-heading">Identifying User Flow Failures</h3>
+            <p class="paragraph">
+                We conducted 8 remote user testing sessions with interview 
+                questions and figma prototypes that participants used with their phone.
+                As it turns out the user flow was a flop. 
+                Initial assumptions we made on user interaction were completely wrong, 
+                forcing us to rethink and reconsider our design with what we learned.
+            </p>
+        </div>
+
+        <div class="box16">
+            <h3 class="sub-heading">A Frustrating Onboarding</h3>
+            <p class="paragraph">
+                One issue users had was understanding what exactly the 
+                onboarding process was. Users typically got stuck on the 
+                recommendation preview screen and didn’t know how to continue.
+            </p>
+            <p class="paragraph">
+                To combat this we removed the recommendation preview screen 
+                and added checkpoint screens which gave context as to what 
+                were the next steps in the onboarding process.
+            </p>
+        </div>
+
+        <div class="box17">
+            <div class="sketching">
+                <img class="picture" src="./images/iteration1.jpg" alt="">
+            </div>  
+        </div>
+
+        <div class="box18">
+            <h3 class="sub-heading">Removing Unnecessary Questions</h3>
+            <p class="paragraph">
+                Another issue was that users were struggling with 
+                how to answer profile questions about them. 
+                Formatting was unclear and some questions were just 
+                unnecessary to achieving our recommendation strategy.
+            </p>
+            <p class="paragraph">
+                As a result we ended up simplifying our flow to one question 
+                per page and introducing button selectors to avoid input confusion.
+            </p>
+        </div>
+
+        <div class="box19">
+            <div class="sketching">
+                <img class="picture" src="./images/iteration2.jpg" alt="">
+            </div>  
+        </div>
+
+        <div class="box20">
+            <h3 class="sub-heading">A Familiar but Unfamiliar homepage</h3>
+            <p class="paragraph">
+                In comparison to other established podcast apps, 
+                ours was lacking standard features. From subscriptions 
+                to custom playlists, users had no motivation to come 
+                back except for the recommendations.
+            </p>
+            <p class="paragraph">
+                Conforming to the norm we introduced the ability to 
+                follow podcasts as well as categorizing recommendations 
+                based on user preferences. For now, this was acceptable 
+                while other standard features were on the backlog. 
+            </p>
+        </div>
+
+        <div class="box21">
+            <div class="sketching">
+                <img class="picture" src="./images/iteration3.jpg" alt="">
+            </div>  
+        </div>
+    </div>
+        
+    <div class="wrapper8">
+        <div class="box22">
+            <h2 class="heading">Developing Auby's Brand Identity</h2>
+            <h3 class="sub-heading">Mix Logo Reactions</h3>
+            <p class="paragraph">
+                Logo’s change overtime for many companies but the main attribute 
+                I wanted to remain constant was for the logo to have a meaning behind it. 
+                Upon conducting many iterations on the logo I received mixed reactions 
+                on every iteration, there was no clear direction except my design intuition. 
+            </p>
+            <div class="wireframe">
+                <img class="picture" src="./images/logo.jpg" alt="">
+                <p class="description">Fun fact: Auby = Audio + Buddy</p>
+            </div>
+        </div>
+
+        <div class="box23">
+            <h3 class="sub-heading">Color and Typography</h3>
+            <p class="paragraph">
+                Introducing a periwinkle color, California sunset gradient and 
+                Poppins sans-serif typeface was done to instill Auby as a 
+                friendly audio buddy you could trust.
+            </p>
+            <div class="color">
+                <img class="picture" src="./images/brand.jpg" alt="">
+                <p class="description">Brand is not just on how it looks but user perception</p>
+            </div>
+        </div>
+
+        <div class="box24">
+            <h3 class="sub-heading">Feather Icons</h3>
+            <p class="paragraph">
+                I specifically chose Feather icons not only for their minimalistic 
+                modern look but also for their open source capabilities that could 
+                be easily implemented for the engineers. 
+            </p>
+            <div class="color">
+                <img class="picture" src="./images/icons.jpg" alt="">
+                <p class="description">Minimalist, simple and straight to the point icons</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="wrapper9">
+        <div class="box25">
+            <h2 class="heading">Design Solutions</h2>
+            <h3 class="sub-heading">Feature Highlight</h3>
+            <p class="paragraph">
+                Below is the final iteration feature highlight of wireframes and prototypes I was able to
+                create using Protopie. Although a design can never be perfect, I am
+                pleased to see how far the design has come from day one.
+            </p>
+        </div>
+
+        <div class="box26">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/onboarding.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+
+        <div class="box27">
+            <h3 class="sub-heading">Efficient Onboarding</h3>
+            <p class="paragraph">
+                Throughout onboarding, users are able answer questions that will 
+                directly influence their recommendation results
+            </p>
+        </div>
+
+        <div class="box28">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/subscribe.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+
+        <div class="box29">
+            <h3 class="sub-heading">Lightning Fast Recommendations</h3>
+            <p class="paragraph">
+                A familiar interface that gets users off the ground and running 
+                with personalized podcast recommendations on sign in
+            </p>
+        </div>
+
+        <div class="box30">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/profile.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+
+        <div class="box31">
+            <h3 class="sub-heading">A Dynamic Experience</h3>
+            <p class="paragraph">
+                Users have the power to control what preference information the 
+                algorithm receives and make changes to their preferences
+            </p>
+        </div>
+
+        <div class="box32">
+            <h3 class="sub-heading">The Big Picture Experience</h3>
+            <p class="paragraph">
+                A seamless transition from mobile to desktop, making it easy 
+                to access your podcasts on whatever device you choose
+            </p>
+        </div>
+
+        <div class="box33">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/desktop.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper10">
+        <div class="box34">
+            <h2 class="heading">The Result</h2>
+            <h3 class="sub-heading">The benefits of an Iterative Process</h3>
+            <p class="paragraph">
+                Taking a look back at our design and product goals, 
+                below is a summary of improvements we’ve made moving us 
+                closer to the ideal experience 
+            </p>
+            <div class="color">
+                <img class="picture" src="./images/the_result.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box35">
+            <h2 class="heading">Retro & Reflection</h2>
+            <h3 class="sub-heading">User testing early and often</h3>
+            <p class="paragraph">
+                I’m so glad that as a team we were able to agree on spending 
+                the time and effort to conduct user testing. There have been 
+                times where user testing was not possible and results were sub-par.
+            </p>
+            <p class="paragraph">
+                User testing helped the team clarify some initial assumptions we had 
+                about users and make major changes in the design early on with the 
+                onboarding and home features. Although this essentially wasted some 
+                engineering time, it’s better we explored this route early on than 
+                realizing this mistake later on down the road.
+            </p>
+        </div>
+        
+        <div class="box36">
+            <h3 class="sub-heading">Data isn’t everything in a product</h3>
+            <p class="paragraph">
+                Early on in the product conceptualization, collecting 
+                as much data on the user was crucial to improving the 
+                accuracy of the recommendation algorithm. What we realized 
+                was there was a trade off between what we were asking and 
+                user responses. 
+            </p>
+            <p class="paragraph">
+                Some questions frustrated the user while others found it odd 
+                that a podcast app wanted to know their political stance.
+                Good thing we conducted multiple rounds of user testing on the 
+                profile questions to eliminate unnecessary questions
+            </p>
+        </div>
+
+        <div class="box37">
+            <h3 class="sub-heading">The importance of engineering and design</h3>
+            <p class="paragraph">
+                Common features such as social media log in, color gradients 
+                with dark mode and UI concepts were nice to have but not a priority.
+            </p>
+            <p class="paragraph">
+                Having some software development knowledge played a key part in 
+                negotiating and understanding the technologies used to develop the 
+                app itself. Listening to a developer about programming and explaining why 
+                some components needed to be this way for UX reasons made me realize 
+                why every designer should learn how to code.
+            </p>
+        </div>
+
+        <div class="box38">
+            <h3 class="sub-heading">That’s a Wrap</h3>
+            <p class="paragraph">
+                Fortunately a majority of the team is still working on the 
+                app, preparing for the next iteration of features.  
+                As for me, this is my first experience at a start-up and i now understand 
+                what people mean by “you’ll be wearing many different hats”.
+            </p>
+            <p class="paragraph">
+                Overall i really enjoyed getting to know my team and going 
+                from concept to a real working app in such a short amount of time. 
+                Although sometimes stressful, I learned a lot not only about startups 
+                but also about taking design leadership. 
+            </p>
+        </div>
+    </div>
+    <div class="wrapper11">
+        <div class="line">
+            <hr/>
+        </div>
+        <div class="foot1">
+            <p class="tag2">
+                Thanks for stopping by,
+            </p>
+            <p class="tag2">
+                Now tell me about yourself.
+            </p> 
+        </div>
+        <div class="foot2">
+            <p class="links">
+                <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="foot3">
+            <div class="links">
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+            </div>
+        </div>
+        <div class="foot4">
+            <p class="tag3">
+                © Edmund Lee 2021
+            </p>
+        </div>
+    </div>
+</body>
+</html>

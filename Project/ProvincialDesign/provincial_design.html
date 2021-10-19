@@ -1,0 +1,393 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styleProvincialDesign.css" />
+        <link rel="stylesheet" href="../styleDesign.css">
+        <link rel="stylesheet" href="./breakpoints.css">
+        <script src="../appDesign.js"></script>
+        <title>Great-West Life Case Study</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+    </head>
+    
+    <body>
+        <script>
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+                jQuery('body').fadeIn(1000);
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if (thetarget = "#"){
+                        break;
+                    }
+                    if (thetarget != "_blank"){			
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            //alert(thehref)
+                            window.location = thehref					
+                        });
+                    }
+                });
+            });
+            setTimeout(function(){
+                jQuery('body').fadeIn();
+            },1000)
+        </script>
+
+        <div class="cover" id="motion1">
+            <nav class="navbar">
+                <h1>
+                    <a href="../../index.html">Edmund / Lee</a>
+                </h1>
+            </nav>
+            
+            <div class="container" onclick="openTopNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="top-nav" class="top-nav">
+                <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+                <div class="overlay">
+                    <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                    <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+                </div>
+            </div>
+            <div class="text-box" id="motion2">
+                <h2>Great-West Life</h2>
+                <h4>Healthcare Coverage Information</h4>
+            </div>
+        </div>
+
+        <div class="wrapper1"> 
+
+            <div class="box01">
+                <h3 class="sub-heading">My Role</h3>
+            </div>
+            <div class="box1">   
+                <div class="Details">
+                    <h4>Role</h4>       
+                    <h2>UX Designer</h2>
+                </div>
+                <div class="Details2">
+                    <h4>Stakeholders</h4>
+                    <h2>Business Analyst</h2>
+                    <h2>Developer</h2>
+                    <h2>SEO Team</h2>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="Intro">
+                    <p class="context">
+                        Great-West Life, a group insurance provider hosts information about provincial
+                        health plans. Group sponsors who purchase insurance through Great-West Life require
+                        this information to make informed decisions on what insurance packages are required.
+                    </p>
+                    <p class="context">
+                        I was responsible for designing the information architecture of provincial insurance plans
+                        and how it would fit into the current site map. 
+                        Redesigning this webpage is a chance to improve the overall user experience when 
+                        searching for group insurance information.
+                    </p>
+                    <p class="context">
+                        With such a small team UX team it was a pleasure being able to ask my
+                        colleagues for advice and help improve my workflow when talking with 
+                        business units and developers for this project.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+            <div class="box1">
+                    <h2 class="title2">My Role</h2>
+                <div class="Details">
+                    <h4>Company</h4>
+                        <h2>Great-West Life</h2>
+                    <h4>Year</h4>
+                        <h2>2019</h2>
+                    <h4>Skills</h4>
+                        <h2>UX Research</h2>
+                        <h2>Data Analytics</h2>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="Intro">
+                    <p class="paragraph">
+                        Great-West Life, a group insurance provider hosts information about provincial
+                        health plans. Group sponsors who purchase insurance through Great-West Life require
+                        this information to make informed decisions on what insurance packages are required.
+                        Redesigning this webpage is a chance to improve the overall user experience when 
+                        searching for group insurance information on Great-West Life. 
+                </div>
+            </div>
+            -->
+
+            <div class="box24">
+                <div class="mockup">
+                    <img class="picture" src="./images/highfidelity.jpg" alt="">
+                    <p class="description">High fidelity prototype of Provincial Health Coverage Fact Sheet</p>
+                </div>
+            </div>
+
+            <div class="box3">
+                <h2 class="heading">Problem Definition</h2>
+                <p class="paragraph">
+                    Currently plan sponsors who visit Great-West Life’s Provincial Government health plans 
+                    look to see what is covered and what is not by their province in term of health benefits. 
+                    Users are required to view provincial health information by viewing an in-browser PDF or 
+                    download the PDF onto their computer. This method of viewing information is not compliant 
+                    with the Accessibility for Ontario’s with Disabilities Act (AODA) and needs to be changed 
+                    as part of a larger initiative for total accessibility across all Great-West Life Platforms.
+                </p>
+            </div>
+
+            <div class="box4">
+                <h2 class="heading">Current User Flow</h2>
+                <p class="paragraph">
+                    Before even starting to sketch out a redesigned solution, an evaluation of the current state
+                    is required to frame our design problem with the proper user requirements and project scope.
+                    First and foremost the current assumed user flow for users to reach the Provincial Health
+                    information page is buried quite deep within Great-West Life's Information Architecture.
+                </p>
+                <div class="picture">
+                    <img src="./images/UserJourney.JPG" alt="">
+                    <p class="description">User Journey from Great-West Life Homepage to Provincial Health Information, outlined in yellow</p>
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="picture">
+                    <img src="./images/UserJourney2.jpg" alt="">
+                    <p class="description">User Flow to reach current Provincial Health Coverage Information</p>
+                </div>         
+            </div>
+
+            <div class="box6">
+                <h4 class="heading">Product Pain Points</h4>
+                <ul class="paragraph">
+                    <li>Organically arriving at the Provincial Health coverage page requires the user to go 4 levels deep to get the information they need</li>
+                    <li>Search results from Google return a low ranking and will not surface unless specific key words are typed</li> 
+                    <li>Housing information within a PDF is difficult to find specific information and creates a barrier to view information</li>
+                    <li>Users require this information to help make informed decisions on group insurance at the beginning of their discovery phase, not near the end</li>
+                </ul>
+            </div>
+            
+            <div class="box7">
+                <h2 class="heading">Process</h2>
+                <h3 class="sub-heading">1. Competitive Analysis</h3>
+                <p class="paragraph">
+                    A competitive analysis was done on some of Great-West Life's competitors such as Sunlife Financial, Manulife Financial 
+                    and TD Insurance. Questions looking to be answered by the analysis include how do our competitors host government health
+                    information, if they do where in their website is it placed and the tone conveyed on the page. In summary, what I found was that: 
+                </p>
+                <ul class="paragraph">
+                    <li>All three insurance firms didn’t host the health care information directly on their site and provided the respective 
+                        links to either the official government of Canada healthcare coverage page or the province’s official health care coverage information page</li>
+                    <li>All type of information displayed were in plain text format with limit highlighting, bolding or complex interfaces</li> 
+                    <li>Language portrayed on competitor website warned that customers should evaluate what is covered and what is covered by their province before making a purchasing decision</li>
+                </ul>
+            </div>
+            
+            <div class="box8">
+                <h3 class="sub-heading">2. Product Analytics</h3>
+                <p class="paragraph">
+                    One of the fantastic things about Great-West Life or large companies in general is a dedicated social media and marketing team.
+                    Although marketing strategies weren't going to help me, the analytics department was and had a lot of great user insight such as
+                    the next page users were clicking on, PDF downloads and unique visits to each page. Below are some of the key findings but in 
+                    general I learned that:
+                </p>
+                <ul class="paragraph">
+                    <li>Provincial Health Insurance page has a relatively low view count compared to the over 5 million annual visits to the homepage</li>
+                    <li>Users hardly download the PDFs and spend approximately 1 - 5 minutes reading the material they need</li> 
+                    <li>Most users that view the provincial health care information return to the product page to presumably look for the right product to purchase</li>
+                </ul>       
+            </div>
+
+            <div class="box9">
+                <div class="picture">
+                    <img src="./images/analytics1.JPG" alt="">
+                    <p class="description">Unique Provincial File Download Count</p>
+                </div>         
+            </div>
+
+            <div class="box10">
+                <div class="picture">
+                    <img src="./images/analytics2.png" alt="">
+                    <p class="description">Key Findings of user behaviour</p>
+                </div>         
+            </div>
+
+            <div class="box11">
+                <h3 class="sub-heading">3. Synthesis of Product Data</h3>
+                <p class="paragraph">
+                    After synthesizing the data, potential solutions were formulated to combat the current issues with the user experience. 
+                </p>
+                <p class="paragraph">
+                    First by addressing the issue that access to the health plan coverage page is only available on one spot within the entire
+                    website. users are using this page to find out what is covered and what isn’t covered by their provincial health care plans,
+                    why not surface this page sooner rather than only within one spot as a link? Sure it may be information that's not specifically
+                    about a product but can be a point of conversion, leading to products that help cover what a group sponsors doesn't cover. 
+                </p>
+                <p class="paragraph">
+                    Other competitors send the user elsewhere with external links instead of hosting the information on the site. Why not keep 
+                    our users on our site where we can control the experience and keep users from straying away when visiting external links?
+                    Even if users are viewing the information for 1-5 minutes, they are still within Great-West Life's user experience domain.
+                </p>
+                <p class="paragraph">
+                    Users visit back to products page under group benefits or exit the site with the information they need showing that users are 
+                    taking this information into consideration when evaluating group coverage, why not make it easier for them on how they make 
+                    their decisions?    
+                </p>
+            </div>
+
+            <div class="box12">
+                <h3 class="sub-heading">4. Iterative Design</h3>
+                <p class="paragraph">
+                    Compiling the research and data now makes it easier to sketch out what our research based design solutions might look like.
+                    A few wireframes were drafted extrapolating from the main ideas formulated to combat the key user experience issues. 
+                </p>
+            </div>
+
+            <div class="box13">
+                <div class="picture">
+                    <img src="./images/LFP2.png" alt="">
+                    <p class="description">Wireframe 1: Side Navigation (dynamic content)</p>
+                </div>         
+            </div>
+
+            <div class="box14">
+                <div class="picture">
+                    <img src="./images/LFP3.jpg" alt="">
+                    <p class="description">Wireframe 2: Drop-down Menu, Content hidden within drawers</p>
+                </div>         
+            </div>
+
+            <div class="box15">
+                <div class="picture">
+                    <img src="./images/LFP1.jpg" alt="">
+                    <p class="description">Wireframe 3: Province tile selection, PDF content laid out in HTML format</p>
+                </div>         
+            </div>
+
+            <div class="box16">
+                <div class="picture">
+                    <img src="./images/LFP4.png" alt="">
+                    <p class="description">Wireframe 4: Drop-down menu + dynamically changing content with side navigation</p>
+                </div>         
+            </div>
+
+            <div class="box17">
+                <h3 class="sub-heading">5. Design Conflict</h3>
+                <p class="paragraph">
+                    Ultimately wireframe 4 was chosen to be one of the ideal solutions due to the pre-made design system components
+                    and design rationale meant that changes to the existing webpage would move quicker due to the reduced development time. 
+                </p>
+                <p class="paragraph">
+                    From a user’s perspective the initial wireframe was more than enough and the business units were delighted to 
+                    see the potential changes to enhance the user experience. But after further discussion, an area which I had yet to consider 
+                    was SEO. My knowledge of SEO optimized design was limited and was not taken into consideration while building the initial 
+                    wireframe. Issues with the proposed design include:
+                </p>
+                <ul class="paragraph">
+                    <li>Drawers - Content that is dynamic (and requires user interaction) is often not taken into consideration or seen by 
+                        Google which affects the content’s ability to rank and be visible in search</li>
+                    <li>Drop-down Menus - Each section of the drop down contains links that dilute the authority being passed down to the 
+                        linked pages storing the authority of the site's content and child-content pages</li> 
+                    <li>Dynamically loaded content - Google has stated that content that is not visible to users right when they land on 
+                        the page may be discounted and not considered to help benefit the ranking of the page. We can consider this content 
+                        to be “invisible” and not searchable</li>
+                </ul>  
+            </div>
+
+            <div class="box18">
+                <h3 class="sub-heading">6. Final Design</h3>
+                <p class="paragraph">
+                    Final design iterations have taken into consideration everyone’s feedback as well as SEO best practices. This included the
+                    removal of dynamically changing content as well as the possibility of content hidden within drawers. Changes to the design 
+                    also included links that lead to static webpages so that Google is able to crawl and improves the overall searchability. 
+                </p>
+            </div>
+
+            <div class="box19">
+                <div class="picture">
+                    <img src="./images/HFP1.jpg" alt="">
+                    <p class="description">Final Wireframe 1: Users are linked to Provincial Healthcare Information before viewing available products</p>
+                </div>         
+            </div>
+                
+            <div class="box20">
+                <div class="picture">
+                    <img src="./images/HFP2.jpg" alt="">
+                    <p class="description">Final Wireframe 2: Removed dynamic content and content hidden within drawers. Province selection is easiest by links with disclaimer above</p>
+                </div>         
+            </div>
+
+            <div class="box21">
+                <div class="picture">
+                    <img src="./images/HFP3.jpg" alt="">
+                    <p class="description">Final Wireframe 3: "No Coverage" is highlighted and PDF content is laid out in a digestible </p>
+                </div>         
+            </div>
+
+            <div class="box22"> 
+                <h2 class="heading">Conclusion</h2>
+                <p class="paragraph">
+                    Seemingly a simple conversion from PDF to straight HTML page text displaying provincial health information
+                    turned out to be a fun and great learning opportunity. I'm glad I failed and improved on my design
+                    to satisfy an important voice in the company to create an effective user experience. Some key points to remember
+                    for next time are:
+                </p>
+                <ul class="paragraph">
+                    <li>Consider each page a system and its potential interactions, not just the user but other domains </li>
+                    <li>The first iteration in a design is not always the best one, it’s okay to have multiple iterations, that’s part of the design process</li>
+                    <li>Sometimes keeping things simple is the best, when you try to over complicate what seems to be a simple task, it can lead to a lot unnecessary work done</li>
+        
+                </ul>   
+            </div>
+        </div>
+        <div class="wrapper6">
+            <div class="line">
+                <hr/>
+            </div>
+            <div class="foot1">
+                <p class="tag2">
+                    Thanks for stopping by,
+                </p>
+                <p class="tag2">
+                    Now tell me about yourself.
+                </p> 
+            </div>
+            <div class="foot2">
+                <p class="links">
+                    <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                    <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="foot3">
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+                </div>
+            </div>
+            <div class="foot4">
+                <p class="tag3">
+                    © Edmund Lee 2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

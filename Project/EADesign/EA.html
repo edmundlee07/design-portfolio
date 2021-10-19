@@ -1,0 +1,197 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styleDesign.css">
+    <link rel="stylesheet" type="text/css" href="./styleEA.css" />
+    <link rel="stylesheet" href="./breakpoints.css">
+    <script src="../appDesign.js"></script>
+    <title>EA UFC Mobile 2</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+</head>
+
+<body>
+    <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function() {
+            jQuery('body').fadeIn();
+
+            jQuery('a').on('click', function(event) {
+                var thetarget = this.getAttribute('target')
+                if (thetarget = "#") {
+                    break;
+                }
+                if (thetarget != "_blank") {
+                    var thehref = this.getAttribute('href')
+                    event.preventDefault();
+                    jQuery('body').fadeOut(function() {
+                        //alert(thehref)
+                        window.location = thehref
+                    });
+                }
+            });
+        });
+        setTimeout(function() {
+            jQuery('body').fadeIn();
+        }, 1000)
+    </script>
+    <div class="cover" id="motion1">
+        <nav class="navbar">
+            <h1>
+                <a href="../../index.html">Edmund / Lee</a>
+            </h1>
+        </nav>
+        
+        <div class="container" onclick="openTopNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    
+        <div id="top-nav" class="top-nav">
+            <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+            <div class="overlay">
+                <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+            </div>
+        </div>
+        <div class="text-box" id="motion2">
+            <h2>Electronic Arts</h2>
+            <h4>EA Sports UFC Mobile 2</h4>
+        </div>
+    </div>
+
+    <div class="wrapper1">
+        <div class="box0">
+            <h2 class="heading">Context</h2>
+            <h3 class="sub-heading">
+                I designed for the UFC Mobile team; a team dedicated to provide 
+                immersive sports gaming experiences built for mobile devices and 
+                consumers across the globe
+            </h3>
+            <p class="paragraph">
+                In the Winter of 2019 I had the privilege of spending 12 weeks 
+                designing for the EA FUEL Team. A division of EA Sports dedicated 
+                to creating high-quality mobile sports games connected to franchises 
+                such as FIFA, NFL and the UFC. 
+            </p>
+            <p class="paragraph">
+                Having previously released UFC Mobile 1 in the spring of 2015, it’ll 
+                be nearly 6 years since UFC fans have received a new F2P mobile game.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper3">
+        <div class="box4">
+            <h2 class="heading">My Role</h2>
+            <p class="paragraph">
+                As an assistant mobile design intern, I led the design for the fighter ability 
+                ranking system and was able to iterate on equipment store designs.
+            </p>
+            <p class="paragraph">
+                Due to the game still being in beta, most of the work I did is still under 
+                NDA. Pictures used in this summary are from the public beta tests. 
+                If you’d like to chat and learn more about my experience please reach out! 
+            </p>
+            <div class="testing">
+                <img class="picture" src="./images/UFC.JPG" loading="lazy" alt="">
+                <p class="description">Sample UFC fight from Android beta testing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper4">
+        <div class="box6">
+            <h2 class="heading">Learnings and Takeaways</h2>
+            <h3 class="sub-heading">use your resource network early and often</h3>
+            <p class="paragraph">
+                I’ve played tons of fighter mobile games before and looked into ability attributes 
+                before but have limited experience with designing frame data. So I reached out to the 
+                UFC console quality verification team for help. Talking about where exactly to start 
+                and how they accomplished the ability tuning in UFC console 2 and 3. 
+            </p>
+            <h3 class="sub-heading">there is no game without player feedback</h3>
+            <p class="paragraph">
+                Half way through my design process we received a UX research game test 
+                report on issues corresponding to the current beta game play. Having this 
+                user feedback was key in directing how corestrikes and ability values were 
+                to be balanced.
+            </p>
+            <h3 class="sub-heading">it can't hurt to ask</h3>
+            <p class="paragraph">
+                As a long time hockey fan and gamer, it was truly a blast being able 
+                to walk across the office and see the game you used to play as a kid being 
+                developed. Having random conversations with different teams, learning about 
+                their design process broadened my understanding of how games were designed 
+                and the extensive amount of work that goes on behind closed doors.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper5">
+        <div class="box7">
+            <h2 class="heading">Acknowledgements</h2>
+            <p class="paragraph">
+                To top it all off, my experience at EA is an internship I'll never forget. 
+                I want to thank everyone on the UFC FUEL Team for welcoming me with open arms 
+                and helping me along the way when I struggled.
+            </p>
+            <p class="paragraph">
+                Special thanks to my manager Jason and the producer team for teaching me so 
+                much during my internship. Thanks to the team I was even able to experience 
+                my first UFC Fight Night 158!
+            </p>
+            <p class="paragraph">
+                I also want to thank my recruiter Brenna for organizing so many awesome 
+                intern events and providing support, knowledge and guidance when needed. 
+                Because of you and all the interns it really made me miss Toronto a little 
+                less and enjoy my time in Vancouver! 
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper6">
+        <div class="line">
+            <hr/>
+        </div>
+        <div class="foot1">
+            <p class="tag2">
+                Thanks for stopping by,
+            </p>
+            <p class="tag2">
+                Now tell me about yourself.
+            </p> 
+        </div>
+        <div class="foot2">
+            <p class="links">
+                <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="foot3">
+            <div class="links">
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+            </div>
+        </div>
+        <div class="foot4">
+            <p class="tag3">
+                © Edmund Lee 2021
+            </p>
+        </div>
+    </div>
+</body>
+</html>

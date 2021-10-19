@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+html,
+body {
+    /*font-family: "Arial", "Helvetica", sans-serif;*/
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Karla', sans-serif;
+    /*background-color: #0a3321;*/
+    background-color: #070716;
+}
+
+.cover .navbar {
+    background: transparent;
+    height: 100px;
+    overflow: hidden;
+}
+
+.cover .navbar a {
+    float: left;
+    text-align: left;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+    font-size: 2rem;
+    /*transition properties apply on mouseout*/
+    transition: 0.2s ease-out;
+    transition-delay: 0.1s;
+    font-family: Karla;
+    color: #f1f1fc;
+    font-weight: 300;
+}
+
+.cover .navbar h1 {
+    margin: 25px 0 0 0;
+    list-style: none;
+    padding-left: 6%;
+    padding-top: 20px;
+}
+
+.cover .navbar a:hover {
+    /*transition properties apply on hover over Home tag*/
+    transition: 0.2s ease-out;
+    /*color: #A2BBA5;*/
+    color: #ffcab1;
+}
+
+.cover .top-nav {
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #161618;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s ease-out;
+    transition-delay: 0.2s;
+    text-align: center;
+    z-index: 100;
+}
+
+
+/*controls the x*/
+.cover .top-nav .overlay a {
+    padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 56px;
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    transition: 0.2s ease-out;
+    margin: 0;
+    padding-top: 25%;
+}
+
+.cover .top-nav a:hover {
+    /*color: #A2BBA5;*/
+    color: #ffcab1;
+}
+
+.cover .top-nav .overlay {
+    margin-top: 125px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cover .top-nav .overlay a {
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.cover .top-nav .btn-close {
+    position: absolute;
+    top: -15px;
+    margin-left: 800px;
+    right: 6%;
+    font-family: Karla;
+    font-weight: 100;
+    padding: 75px 0 0 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 56px;
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    transition: 0.2s ease-out;
+    margin: 0;
+}
+
+
+
+
+/*Container for bars*/
+.cover .container {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    float: right;
+    margin-top: -54px;
+    padding-right: 6%;
+    padding-top: 20px;
+}
+
+
+/* Styling for Menu bars*/
+.cover .bar1,
+.cover .bar2,
+.cover .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #f1f1fc;
+    margin: 5px 0 0 0;
+    transition: 0.3s ease-out;
+    transition-delay: 0.3s;
+}
+
+.cover .bar1:hover,
+.cover .bar2:hover,
+.cover .bar3:hover {
+    /*background-color: #A2BBA5;*/
+    background-color: #ffcab1;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .cover .top-nav .overlay {
+        margin-top: 100px;
+    }
+    .cover .top-nav .overlay a {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cover .top-nav .overlay {
+        margin-top: 100px;
+    }
+    .cover .top-nav .overlay a {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+    .cover .top-nav .overlay {
+        margin-top: 100px;
+    }
+    .cover .top-nav .overlay a {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .cover .top-nav .overlay {
+        margin-top: 100px;
+    }
+    .cover .top-nav .overlay a {
+        padding-top: 20%;
+    }
+}

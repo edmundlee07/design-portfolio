@@ -1,0 +1,391 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styleGroupnet.css" />
+    <link rel="stylesheet" href="../styleDesign.css">
+    <link rel="stylesheet" href="./breakpoints.css">
+    <script src="../appDesign.js"></script>
+    <title>GroupNet Case Study</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+</head>
+
+<body>
+    <script>
+        jQuery('body').css('display','none');
+        jQuery(document).ready(function() {
+            jQuery('body').fadeIn(1000);
+            jQuery('a').on('click',function(event){
+                var thetarget = this.getAttribute('target')
+                if (thetarget = "#"){
+                    break;
+                }
+                if (thetarget != "_blank"){			
+                    var thehref = this.getAttribute('href')
+                    event.preventDefault();
+                    jQuery('body').fadeOut(function(){
+                        //alert(thehref)
+                        window.location = thehref					
+                    });
+                }
+            });
+        });
+        setTimeout(function(){
+            jQuery('body').fadeIn();
+        },1000)
+    </script>
+
+    <div class="cover" id="motion1">
+        <nav class="navbar">
+            <h1>
+                <a href="../../index.html">Edmund / Lee</a>
+            </h1>
+        </nav>
+        
+        <div class="container" onclick="openTopNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div id="top-nav" class="top-nav">
+            <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+            <div class="overlay">
+                <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+            </div>
+        </div>
+        <div class="text-box" id="motion2">
+            <h2>GroupNet</h2>
+            <h4>Redesign of an Insurance Registration</h4>
+        </div>
+    </div>
+
+    <div class="wrapper1">
+
+        <div class="box01">
+            <h3 class="sub-heading">My Role</h3>
+        </div>
+        <div class="box1">   
+            <div class="Details">
+                <h4>Role</h4>       
+                <h2>UX Designer</h2>
+            </div>
+            <div class="Details2">
+                <h4>Stakeholders</h4>
+                <h2>Business Analyst</h2>
+                <h2>Developer</h2>
+                <h2>SEO Team</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="Intro">
+                <p class="context">
+                    As part of Great-West Life’s goal to help alleviate an increase in call center volume 
+                    regarding GroupNet registration, a new registration process for GroupNet is designed 
+                    and prototyped. 
+                </p>
+                <p class="context">
+                    The redesigned desktop registration process of GroupNet will help address current 
+                    and potential issues involving various stakeholders. The end result is a decrease 
+                    in call volume regarding GroupNet registration, an intuitive user interface and an 
+                    improved user experience. 
+                </p>
+                <p class="context">
+                    As this issue needed to be resolved urgently, this project was a joint effort 
+                    with senior UX members from the London office. My main contribution was designing
+                    improvements for the registration flow that had a high impact, were cost-effective and
+                    could be deployed in a matter of weeks by the development team.
+                </p>
+            </div>
+        </div>
+
+        <!--
+        <div class="box1">
+            <h2 class="title2">GroupNet Registration Redesign</h2>
+            <div class="Details">
+                <h4>Company</h4>
+                <h2>Canada Life</h2>
+                <h4>Year</h4>
+                <h2>2019</h2>
+                <h4>Skills</h4>
+                <h2>UX Research</h2>
+                <h2>Interaction Design</h2>
+                <h2>Data Analytics</h2>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="Intro">
+                <p class="paragraph">
+                    As part of Great-West Life’s goal to help alleviate an increase in call center call volume regarding GroupNet registration, a new registration process for GroupNet is being designed and prototyped. The redesigned desktop registration process of GroupNet
+                    will help address current and potential issues involving various stakeholders. The end result is a decrease in call volume regarding GroupNet registration, an intuitive user interface and an improved user experience. Recommended action
+                    includes incorporating the UX team early in the design process to improve product quality, user experience and prevent user dissatisfaction before it occurs.
+                </p>
+            </div>
+        </div>
+        -->
+
+        <div class="box3">
+            <div class="mockup">
+                <img class="picture" src="./images/hifi1.jpg" alt="">
+                <p class="description">High fidelity prototype of GroupNet Log in Screen</p>
+            </div>
+        </div>
+
+        <div class="box4">
+            <h2 class="sub-heading">Problem Definition</h2>
+            <p class="paragraph">
+                GroupNet, a Great-West Life insurance application is a system widely used across 
+                Canada specifically for group benefits members in small and large businesses. 
+                GroupNet is used as an online group insurance solution to help users submit claims, 
+                check claim status and other insurance related tasks. GroupNet is primarily accessed 
+                through a desktop environment but with a recent update to the IOS app store, 
+                an increasing number of users are using GroupNet through their mobile device
+            </p>
+            <p class="paragraph">
+                Recently, product owners of GroupNet have been notified of an increase in call 
+                volume with regards to registration. This is most likely due to an on-going 
+                migration of users from the old application to a new and improved GroupNet 
+                experience which requires them to re-register. The surge in calls has led to many 
+                unsatisfied users who are unable to receive help or submit their claims. 
+                Due to the poor user experience, GroupNet’s reputation has been damaged.
+            </p>
+            <div class="current">
+                <img class="picture" src="./images/oldgroupnet.jpg" alt="">
+                <p class="description">“Old GroupNet” Log in and Sign up Page</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper3">
+        <div class="box5">
+            <h2 class="sub-heading">Product Goal</h2>
+            <p class="paragraph">
+                To satisfy user pain points with the current system, design changes must help 
+                clarify public confusion on which GroupNet to register with, successfully allow 
+                legacy users to register on the new GroupNet platform, link their existing 
+                GroupNet accounts and reduce user error during the registration process.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper5">
+        <div class="box6">
+            <h2 class="sub-heading">User Experience Goals</h2>
+            <p class="paragraph">
+                Using the Microsoft’s Desirability toolkit, I was able to make a list of user 
+                experience goals that I wanted users to feel when using the new system. 
+                This toolkit assisted in identifying what emotions we want to elicit from the 
+                user before, during and after the use of the system
+            </p>
+            <ul class="paragraph">
+                <li>
+                    Users should feel confident on how to register with all the required information 
+                    needed beforehand from their employer
+                </li>
+                <li>
+                    Users should feel that the actions of registration, logging in and password 
+                    recovery are easy, intuitive and self-serving actions
+                </li>
+                <li>
+                    Users should feel knowledgeable of what is happening to the “GroupNet” 
+                    website and avoid registering for an obsolete system
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper6">
+        <div class="box8">
+            <h2 class="heading">Process</h2>
+            <h3 class="sub-heading">1. Current Registration Flow</h3>
+        </div>
+
+        <div class="box9">
+            <p class="paragraph">
+                To get a high-level view of the entire user flow through the GroupNet 
+                registration process, I proceeded to map out different scenarios 
+                and possible flows
+            </p>
+        </div>
+
+        <div class="box10">
+            <div class="plantservices">
+                <img class="picture" src="./images/olduserflow.jpg" alt="">
+                <p class="description">GroupNet sign in and forgot password flow diagram</p>
+            </div>
+        </div>
+
+        <div class="box11">
+            <h3 class="sub-heading">2. Understanding our Users</h3>
+            <p class="paragraph">
+                To get a better understanding on the problem and what the root issue 
+                most users are struggling with, I turned to call center employees at 
+                Canada Life for answers. Over a 4-day observation period, we had call 
+                center employees record log their conversations and what users were 
+                struggling with. To get a full breakdown on the situation, issues were 
+                sorted and categorized appropriately
+            </p>
+            <ul class="paragraph">
+                <li>Plan member needed a plan ID and member ID to complete verification – 33.3%</li>
+                <li>Plan member used new information that has not yet been updated in our system – 25.9%</li>
+                <li>Plan member used the wrong postal code or an old address – 18.5%</li>
+                <li>Plan member used a middle name not on file – 11.2%</li>
+                <li>Plan member not internally recognized or authenticated by company – 11.1%</li>
+            </ul>
+        </div>
+
+        <div class="box13">
+            <h3 class="sub-heading">3. Understanding Google Analytics</h3>
+            <p class="paragraph">
+                I turned to the digital analytics team to extract overall user trends 
+                and to no surprise view, a recent decline in successful user account 
+                linking and successful registrations
+            </p>
+            <div class="sketching">
+                <img class="picture" src="./images/gg1.jpg" alt="">
+                <p class="description">GroupNet user trends from Google Analytics</p>
+            </div>
+
+            <p class="paragraph" id="padding1">
+                The digital team also helped me pinpoint and extract user pain points 
+                which coincide with the Canada Life call center account linking data
+            </p>
+            <div class="sketching">
+                <img class="picture" src="./images/gg2.jpg" alt="">
+                <p class="description">GroupNet account linking errors from Google Analytics</p>
+            </div>
+        </div>
+
+        <div class="box14">
+            <h3 class="sub-heading">4. Whiteboard User Flow Sketching Session</h3>
+            <p class="paragraph">
+                With key features and user pain points identified on the user flow, I did a 
+                whiteboard session with my colleagues to decide what changes would 
+                make sense from a development, product manager, business and design perspective
+            </p>
+            <div class="sketching">
+                <img class="picture" src="./images/whiteboardsketch.jpg" alt="">
+                <p class="description">Live and interactive user flow whiteboard session</p>
+            </div>
+        </div>
+
+        <div class="box15">
+            <h3 class="sub-heading">5. New GroupNet Registration Flow</h3>
+            <p class="paragraph">
+                After consolidation with different stakeholders from the development, 
+                business, product and design teams, a new registration, homepage and 
+                log in flows were mapped
+            </p>
+            <div class="sketching">
+                <img class="picture" src="./images/newuserflow.jpg" alt="">
+                <p class="description">New and proposed GroupNet Registration Flow</p>
+            </div>
+        </div>
+
+        <div class="box16">
+            <h3 class="sub-heading">6. Final Design Feature Explanation</h3>
+            <p class="paragraph">
+                With the introduction of the GroupNet logo, primary action and an 
+                explanation of what’s going on not only informs the user of why they 
+                need to register again but alerts them of changes going on within the 
+                company. This prevents users from registering with the old service 
+                and invites them to register or re-register with the new GroupNet
+            </p>
+            <div class="wireframe">
+                <img class="picture" src="./images/hifi2.jpg" alt="">
+                <p class="description">Redesigned old GroupNet homepage</p>
+            </div>
+
+            <p class="paragraph" id="padding1">
+                The new homepage has been fitted with a
+                dropdown of the most asked questions that helps address the 
+                call center questions Canada Life has been receiving. The homepage 
+                also features a primary action registration button to encourage 
+                primary action for users coming from the Old GroupNet experience 
+                looking to register
+            </p>
+            <div class="wireframe">
+                <img class="picture" src="./images/hifi3.jpg" alt="">
+                <p class="description">New GroupNet registration and help section</p>
+            </div>
+
+            <p class="paragraph" id="padding1">
+                Users are also shown a plan member and member ID card before as 
+                well as during the registration process allowing them to have 
+                all the materials necessary to successfully create and link their 
+                account. The registration process is also broken down into 
+                multiple steps to reduce the cognitive load for users.
+            </p>
+            <div class="wireframe">
+                <img class="picture" src="./images/hifi4.jpg" alt="">
+                <p class="description">Plan member card and registration breakdown </p>
+            </div>
+        </div>
+
+        <div class="box17">
+            <h3 class="sub-heading">8. Conclusion</h3>
+            <p class="paragraph">
+                Upon conducting website maintenance, within a one-week period 
+                overall call volume related issue involving GroupNet were reduced 
+                by 32%. Within a 1-month period over 67% of unique link clicks 
+                represented the “start registration” primary action button with
+                a 59% decrease in traffic towards the Old GroupNet homepage.
+            </p>
+            <p class="paragraph">
+                Changes resulted in an overall 20% increase in successful account 
+                linking and 70% less traffic towards the GroupNet help page hosted 
+                on the Great-West Life site with the integrated homepage help center.
+                It is evident that subtle design changes in the user flow resulted 
+                in a more autonomous registration, log in, lost password and edge case 
+                handling within GroupNet.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper7">
+        <div class="line">
+            <hr/>
+        </div>
+        <div class="foot1">
+            <p class="tag2">
+                Thanks for stopping by,
+            </p>
+            <p class="tag2">
+                Now tell me about yourself.
+            </p> 
+        </div>
+        <div class="foot2">
+            <p class="links">
+                <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="foot3">
+            <div class="links">
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+            </div>
+        </div>
+        <div class="foot4">
+            <p class="tag3">
+                © Edmund Lee 2021
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styleMotionDesign.css" />
+        <link rel="stylesheet" href="../styleDesign.css">
+        <link rel="stylesheet" href="./breakpoints.css">
+        <script src="../appDesign.js"></script>
+        <title>Motion Playground</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <script>
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+                jQuery('body').fadeIn(1000);
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if (thetarget = "#"){
+                        break;
+                    }
+                    if (thetarget != "_blank"){			
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            //alert(thehref)
+                            window.location = thehref					
+                        });
+                    }
+                });
+            });
+            setTimeout(function(){
+                jQuery('body').fadeIn();
+            },1000)
+        </script>
+
+        <div class="cover" id="motion1">
+            <nav class="navbar">
+                <h1>
+                    <a href="../../index.html">Edmund / Lee</a>
+                </h1>
+            </nav>
+            
+            <div class="container" onclick="openTopNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="top-nav" class="top-nav">
+                <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+                <div class="overlay">
+                    <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                    <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+                </div>
+            </div>
+            <div class="text-box" id="motion2">
+                <h2>Motion Playground</h2>
+                <h4>Concept Interaction Work</h4>
+            </div>
+        </div>
+
+        <div class="wrapper1">  
+            <div class="box1">
+                <div class="Introduction">
+                    <h2 class="sub-heading">First and Foremost...</h2>
+                </div>
+                <div class="Introduction1">
+                    <p class="paragraph">
+                        These designs are part of a growing library of experiments and ideas that I've had 
+                        or work that I've done during for other companies. These designs are potential design
+                        solutions for existing problems. This collection is documentation of my growth as a 
+                        product designer and as a person.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="Concept1">
+                    <h2 class="sub-heading">Omega Landing Page</h2>
+                    <p class="paragraph">
+                        One of my hobbies is learning about watches and the intricate craftsmanship required to make a watch. 
+                        I really wanted to immerse users in the greatest marks Omega in particular has made over the past few years, 
+                        bringing a static concept page alive
+                    </p>
+                    <div class="video">
+                        <video loop="true" autoplay="autoplay" controls muted>
+                            <source src="./images/omega2.mp4" type="video/webm">
+                            <source src="./images/omega web.webm" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="Concept2">
+                    <h2 class="sub-heading">Livelo Landing Page</h2>
+                    <p class="paragraph">
+                        Being alive in the middle of a pandemic, it makes me wonder how we'll ever return back to normal travel again. 
+                        Livelo, a ficticious landing page, is a network to provide support on how people can once again explore
+                        the world safely and navigate through dense environments after Covid-19
+                    </p>
+                    <div class="video">
+                        <video loop="true" autoplay="autoplay" controls muted>
+                            <source src="./images/livelo.mp4" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper6">
+            <div class="line">
+                <hr/>
+            </div>
+            <div class="foot1">
+                <p class="tag2">
+                    Thanks for stopping by,
+                </p>
+                <p class="tag2">
+                    Now tell me about yourself.
+                </p> 
+            </div>
+            <div class="foot2">
+                <p class="links">
+                    <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                    <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="foot3">
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+                </div>
+            </div>
+            <div class="foot4">
+                <p class="tag3">
+                    © Edmund Lee 2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+

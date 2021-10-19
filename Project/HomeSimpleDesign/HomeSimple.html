@@ -1,0 +1,589 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styleDesign.css">
+    <link rel="stylesheet" type="text/css" href="./styleHomeSimple.css" />
+    <link rel="stylesheet" href="./breakpoints.css">
+    <script src="../appDesign.js"></script>
+    <title>Home Simple Case Study</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+</head>
+
+<body>
+    <div class="cover" id="motion1">
+        <nav class="navbar">
+            <h1>
+                <a href="../../index.html">Edmund / Lee</a>
+            </h1>
+        </nav>
+        
+        <div class="container" onclick="openTopNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    
+        <div id="top-nav" class="top-nav">
+            <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+            <div class="overlay">
+                <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+            </div>
+        </div>
+        <div class="text-box" id="motion2">
+            <h2>Home Simple</h2>
+            <h4>Property Recommendation System</h4>
+        </div>
+    </div>
+
+    <div class="wrapper1">
+        <div class="box0">
+            <h3 class="story1">
+                4th year Engineering Capstone Project - A cumulative task to demonstrate 
+                all systems design best practices and apply knowledge gained through 
+                the program in a final 8 month group capstone project.
+            </h3>
+            <p class="story2">
+                A product motivated by the complex home buying process, untrustworthy real 
+                estate agents and the millennial dream of owning property someday.
+            </p>
+            <p class="disclaimer">
+                Disclaimer: All thoughts and opinions expressed in this case study are in 
+                collaboration with Team 08 in the Systems Design Engineering Cohort of 2021
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper2">
+      
+        <div class="box01">
+            <h3 class="sub-heading">My Role</h3>
+        </div>
+
+        <div class="box1">   
+            <div class="Details">
+                <h4>Role</h4>       
+                <h2>Product designer / Research lead</h2>
+            </div>
+            <div class="Details2">
+                <h4>The Team</h4>
+                <h2>Kevin Wang (Developer)</h2>
+                <h2>Jonathan Ng (Developer)</h2>
+                <h2>Apiram Krishnathas (Product Manager)</h2>
+                <h2>Edmund Lee (Product Designer/ Researcher)</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="Intro">
+                <p class="context">
+                    As part of our 4th year Engineering Capstone project, our scope and 
+                    topic of work was bound by only imagination. Aside from meeting 
+                    course deliverables, the key requirement was building a product 
+                    using engineering knowledge and applying a scientific methodology 
+                    to consistently hypothesize, test, analyze and iterate on our project design.  
+                </p>
+                <p class="context">
+                    I was responsible for everything product related: user research, wireframing, 
+                    prototypes, branding, user testing and data analysis.
+                </p>
+                <p class="context">
+                    The best part of all, I had the luxury to spend countless hours over zoom call 
+                    working on this project with none other than my classmates whom I've spent the 
+                    last 5 years with. It truly has been a pleasure being able to work with them 
+                    just one last time. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper3">
+        <div class="box4">
+            <h3 class="sub-heading">Problem Definition</h3>
+            <p class="paragraph">
+                We get it, buying a home is hard!  Homes are rising in price and It takes 
+                a lot of money to buy a house so you have to make sure you're doing it 
+                right the first time. But for most people who are buying their first homes, 
+                they don't have the expertise to navigate through the complex process or 
+                their ideal preferences. 
+            </p>
+            <p class="paragraph">
+                Users end up feeling pressured, frustrated and overwhelmed during the 
+                home buying process. Resulting in new home owners temporarily giving 
+                up and discouraged from the idea of home ownership.
+            </p>
+            <div class="current">
+                <img class="picture" src="./images/Competitors.jpg" alt="">
+                <p class="description">
+                    Popular real estate sites used primarily within Canada and USA
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper4">
+        <div class="box6">
+            <h2 class="heading1">Design Challenges</h2>
+            <h3 class="sub-heading">Data Paywalls</h3>
+            <p class="paragraph">
+                There is no open source database of frequently detailed home listings. 
+                Unfortunately a majority of MLS data is barred unless a registered real 
+                estate agent has access to the database. 
+            </p>
+            <h3 class="sub-heading">An intuitive Onboarding</h3>
+            <p class="paragraph">
+                We need to establish a balance between collecting personal and financial 
+                information to make initial recommendations (the cold start problem)
+            </p>
+            <h3 class="sub-heading">Recommendation Engine</h3>
+            <p class="paragraph">
+                How can we incorporate a recommendation engine that is not 
+                only accurate but trustworthy that user’s will contribute their 
+                data towards?
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper5">
+        <div class="box7">
+            <h2 class="heading1">Product Goals</h2>
+            <h3 class="sub-heading">Holistic Experience</h3>
+            <p class="paragraph">
+                Collection of both financial and personal preferences to take 
+                into account when making recommendations. Realistic housing 
+                options that are within budget and in reason of buyer preferences.
+            </p>
+            <h3 class="sub-heading">Unbiased Listings</h3>
+            <p class="paragraph">
+                Listings surfaced to the user contain a reduced bias free from 
+                external influence and sponsors. Listings are best fit to a user’s 
+                profile depending on the information provided 
+            </p>
+            <h3 class="sub-heading">Evolving Recommendations</h3>
+            <p class="paragraph">
+                Recommendations change depending on a user’s changing preferences from 
+                implicit and explicit data gathered during system usage.
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper6">
+        <div class="box9">
+            <h2 class="heading">From a First Time Home Buyer's Perspective</h2>
+            <h3 class="sub-heading">User Insight</h3>
+            <p class="paragraph">
+                We wanted to get a better understanding of the background and the 
+                mindset experienced recent buyers have experienced during the current housing market.
+                To record insight from our primary users, we conducted 7 structured user interviews 
+                targeted at new home buyers or owners with no specific age requirement spread out over 
+                a period of 5 weeks.
+            </p>
+            <p class="paragraph">
+                Below are the highlights from an affinity diagramming session done on Miro. 
+                Common themes found during this process include the real estate agent, 
+                financial remarks, search criteria, listing sites and process issues
+            </p>
+            <div class="testing">
+                <img class="picture" src="./images/Affinity Diagramming.jpg" loading="lazy" alt="">
+                <p class="description">Affinity diagramming highlights from Miro</p>
+            </div>
+        </div>
+
+        <div class="box11">
+            <h3 class="sub-heading">Crowdsourcing Data</h3>
+            <p class="paragraph">
+                In addition to user interviews we posted a Google survey on 
+                Reddit under multiple home buying subreddits to gather further 
+                data on the home buying process, home buying tools and their 
+                demographic. From the 34 responses, some of the highlights include…
+            </p>
+            <ul class="paragraph">
+                <li>42.9% of home buyers were using Redfin.com to purchase a home</li>
+                <li>61.1% of users said searching for a home was the most difficult part of their experience</li>
+                <li>82.9% of user’s stated that using the home buying tools on popular sites like Zillow and Redfin helped when making a buying decision</li>
+            </ul>
+            <div class="persona">
+                <img class="picture" src="./images/Reddit responses.jpg" loading="lazy" alt="">
+                <p class="description">Summary of data collected from our Google survey</p>
+            </div>
+        </div>
+
+        <div class="box12">
+            <h2 class="heading">Systems Block Diagram</h2>
+            <h3 class="sub-heading">Recommendation System High-level Design</h3>
+            <p class="paragraph">
+                Using the research we gathered we decided to best emulate the 
+                home buying process we were to divide our system into 2 sections, 
+                pre-buying and searching systems. The pre-buying phase is where we would 
+                collect user financial information (income, debts, loans, expenses etc.) 
+                and preferences (price, location, bedrooms, bathrooms etc.)
+            </p>
+
+            <p class="paragraph">
+                Using this information we could fetch a few preliminary listings from 
+                the Realtor.ca API based on existing criteria. Next user interaction from 
+                viewing listings, scrolling and favoriting actions would be recorded.
+            </p>
+
+            <p class="paragraph">
+                In the backend our system used TF-IDF to find keyword similarities between 
+                listing description and Google’s VGG-16 Pre-trained network to find image 
+                similarity between home styles. With this method we can now recommend 
+                homes based off of an averaged “ideal home” curated by continually evolving 
+                user interaction. 
+
+            </p>
+            <div class="testing">
+                <img class="picture" src="./images/recommendation system.jpg" alt="">
+                <p class="description">Block diagram flow of backend recommendation system</p>
+            </div>
+        </div>
+
+        <div class="box13">
+            <h2 class="heading">Design Iterations and Adjustments</h2>
+            <h3 class="sub-heading">Initial Ideation and Flow</h3>
+            <p class="paragraph">
+                After some research into other personalized experience apps 
+                I began sketching my ideas and variations of the user flow
+            </p>
+            <div class="servicedesign">
+                <img class="picture" src="./images/Wireframe notebook sketches.jpg" alt="">
+                <p class="description">Rough notebook sketches of my first iteration wireframes</p>
+            </div>
+            <div class="servicedesign">
+                <img class="picture" src="./images/Iteration 1.jpg" alt="">
+                <p class="description">First iteration wireframes on Figma</p>
+            </div>
+        </div>
+
+        <div class="box14">
+            <h3 class="sub-heading">Proposed User Flow</h3>
+            <p class="paragraph">
+                After a few rounds of internal feedback from the team, I arrived at the 2nd 
+                iteration site map seen below. To the team, logically this flow made sense 
+                according to our proposed algorithm. Since we haven’t done any user testing 
+                we don’t actually know if this is the best answer to resolve our product or 
+                design goals. 
+
+            </p>
+        </div>
+
+        <div class="box15">
+            <div class="servicedesign">
+                <img class="picture" src="./images/Iteration 2.jpg" alt="">
+                <p class="description">2nd iteration wireframes of user flow</p>
+            </div>
+            <div class="servicedesign">
+                <img class="picture" src="./images/Iteration 2 Showcase.jpg" alt="">
+                <p class="description">In-depth view of 2nd iteration wireframes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper7">
+        <div class="box160">
+            <h2 class="heading1">Design Flaws</h2>
+            <h3 class="sub-heading">Real-world Prototype Feedback </h3>
+            <p class="paragraph">
+                To test this iteration we conducted 3 user tests which included a 
+                cognitive walkthrough, post interview questions and a standard 
+                usability score test. User’s were asked to fill out the onboarding 
+                flow and browse through the recommendations within our Figma prototype.  
+            </p>
+            <p class="paragraph">
+                In reality the feedback we received on our prototype was less than stellar. 
+                Generalized assumptions we made based on our user interviews were incorrect 
+                and revealed the various flaws within our prototype.  
+            </p>
+        </div>
+
+        <div class="box16">
+            <h3 class="sub-heading">Data Privacy Awareness</h3>
+            <p class="paragraph">
+                One issue users immediately raised were concerns over financial and personal 
+                data that was benign collected. All users took the time to ask questions 
+                about data privacy and storage
+            </p>
+            <p class="paragraph">
+                To combat this we wanted to be transparent and directly address why we were 
+                collecting their personal data as well as what ISO standards were satisfied 
+                storing their data. 
+            </p>
+        </div>
+
+        <div class="box17">
+            <div class="sketching">
+                <img class="picture" src="./images/improvement 1.jpg" alt="">
+            </div>  
+        </div>
+
+        <div class="box18">
+            <h3 class="sub-heading">Detailed Search Results</h3>
+            <p class="paragraph">
+                Another issue was that users were frustrated with the lack of listing details 
+                per search result. From our initial search results, users lacked the context 
+                on property location or housing details which were buried within each listing
+            </p>
+            <p class="paragraph">
+                As an improvement we listened directly to user concerns and increased the 
+                quantity of data being presented to the user. This included property maps, 
+                search filters used, bedrooms, bathrooms, square feet and year built. 
+            </p>
+        </div>
+
+        <div class="box19">
+            <div class="sketching">
+                <img class="picture" src="./images/improvement 2.jpg" alt="">
+            </div>  
+        </div>
+
+        <div class="box20">
+            <h3 class="sub-heading">Increased Listing Visualization</h3>
+            <p class="paragraph">
+                Similarly, users found reading listing details difficult and would have 
+                appreciated a map to understand relative location or general neighborhood
+            </p>
+            <p class="paragraph">
+                To keep design language consistent, we made similar updates to the listing 
+                details like we did to the search results page. We primarily focused on 
+                readability and displaying the information in a way that was easy to digest. 
+            </p>
+        </div>
+
+        <div class="box21">
+            <div class="sketching">
+                <img class="picture" src="./images/improvement 3.jpg" alt="">
+            </div>  
+        </div>
+    </div>
+        
+    <div class="wrapper8">
+        <div class="box22">
+            <h2 class="heading">Establishing a unique brand Identity</h2>
+            <h3 class="sub-heading">Keeping it Simple</h3>
+            <p class="paragraph">
+                Our original plan was to not have any logo at all and just “Home Simple” 
+                but our prototype felt incomplete without one. The motivation behind our 
+                logo was to keep things simple and to let users know we’re in the property 
+                technology space. 
+            </p>
+            <div class="wireframe">
+                <img class="picture" src="./images/Logo Iterations.jpg" alt="">
+                <p class="description">Flat to isometric logo concepts</p>
+            </div>
+        </div>
+
+        <div class="box23">
+            <h3 class="sub-heading">Color and Typography</h3>
+            <p class="paragraph">
+                On the second iteration of Home Simple it occurred to me that our blue and 
+                white branding colors were not unique to our product. Other popular realtor 
+                sites such as Zillow or Redfin did not incorporate a balanced dark theme that 
+                I felt would standout. Leading to the introducing a cool-toned sage green and 
+                accent pastel pink was done to reinforce the growth of one’s home.
+            </p>
+            <div class="color">
+                <img class="picture" src="./images/Styleboard 3.jpg" alt="">
+                <p class="description">UI overhaul styleboard for final iteration 3</p>
+            </div>
+            <div class="color">
+                <img class="picture" src="./images/Iteration 3.jpg" alt="">
+                <p class="description">Iteration 3 final prototype results</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="wrapper9">
+        <div class="box25">
+            <h2 class="heading">Final Solution</h2>
+            <h3 class="sub-heading">Feature Highlight</h3>
+            <p class="paragraph">
+                Below is the final iteration of wireframes that our capstone project ended on. 
+                In addition, I was also able to add motion to my prototypes using protopie and 
+                bring the product design to life. Although we had to cut a few features, 
+                I’m ecstatic to see how much progress we’ve made looking back to our project start date
+            </p>
+        </div>
+
+        <div class="box26">
+            <h3 class="sub-heading">Deconstructive Homepage</h3>
+            <p class="paragraph">
+                A modern and simple home page, easy to develop and breaks down the main 
+                reasons why users should use our product
+            </p>
+        </div>
+
+        <div class="box27">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/landing_page.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+
+        <div class="box28">
+            <h3 class="sub-heading">Redesigned Navigation</h3>
+            <p class="paragraph">
+                A revamped user interface to give user’s more detail and get 
+                a better grasp on housing details
+            </p>
+        </div>
+
+        <div class="box29">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/Details.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+
+        <div class="box32">
+            <h3 class="sub-heading">Favorite Recommendations</h3>
+            <p class="paragraph">
+                Recommendation algorithm shows listings based on visual and property 
+                listings that users have liked or viewed
+            </p>
+        </div>
+
+        <div class="box33">
+            <div class="video">
+                <video muted loop autoplay>
+                    <source src="./video/recommendations.mp4" type="video/mp4" loading="lazy">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper10">
+        <div class="box34">
+            <h2 class="heading">Final Results</h2>
+            <h3 class="sub-heading">Data Analysis and Interpretation</h3>
+            <p class="paragraph">
+                Through multiple user tests, we conducted a system usability scale (SUS) 
+                analysis with each iteration to track usability improvements in conjunction 
+                with our recommendation algorithm improvements for n = 3. We realize that 
+                a small sample isn’t representative of our real world product performance, 
+                therefore our design improvement milestones will require further testing 
+                to be certain.
+            </p>
+            <ul class="paragraph">
+                <li>Mean user SUS score increased from 51.6 to 65.83</li>
+                <li>Our Min SUS score floor was increased from 10.03 to 57.05</li>
+                <li>Our Min SUS Grade rating increased from an F to a D</li>
+                <li>While our margin of error was corrected from 50.63 to 8.77</li>
+            </ul>
+
+            <div class="color">
+                <img class="picture" src="./images/stats.jpg" alt="">
+                <p class="description">SUS scores analysis & Algorithm Milestones</p>
+            </div>
+        </div>
+
+        <div class="box35">
+            <h2 class="heading">Retro & Reflection</h2>
+            <h3 class="sub-heading">Documentation is everything</h3>
+            <p class="paragraph">
+                Part of our Capstone project requirements was to document key findings, mistakes, 
+                our process, test results and project management related activities into some form 
+                of an engineering log book. Initially it was a hassle and a task that I only did 
+                because it was a requirement by the professor.
+            </p>
+            <p class="paragraph">
+                Flash forward 8 months to the end of our project and I’m so glad I kept a record 
+                of all the research and rationale behind the decisions we made as a group. It was 
+                extremely handy to go back to view a timeline of our progress and a complete log 
+                of all our testing outcomes. You never realize how important documentation is until 
+                you need it.
+            </p>
+        </div>
+        
+        <div class="box36">
+            <h3 class="sub-heading">Engineering Limitations</h3>
+            <p class="paragraph">
+                As a team it was important to identify our strengths and weaknesses to define 
+                a scope that was still feasible while balancing other courses. Early on we realized 
+                that core technology such as the image recognition library was readily available 
+                while ideas to implement housing databases or neighborhood analytics would have been 
+                nice but locked behind a paywall
+            </p>
+            <p class="paragraph">
+                Design features such as social media registration or integrated neighborhood analytics 
+                would have greatly enhanced the user experience but considered unnecessary engineering 
+                work in the context of this project
+            </p>
+        </div>
+
+        <div class="box37">
+            <h3 class="sub-heading">Users are in the Driver Seat</h3>
+            <p class="paragraph">
+                If there’s one thing we all learned early on in the engineering design process was 
+                to establish a repeatable, robust and accurate testing protocol that could be conducted 
+                after every iteration.
+            </p>
+            <p class="paragraph">
+                This way we were able to make hypotheses and validate whether or not the decisions we made 
+                were better or worse in comparison to our initial hypothesis. This came in the form of user 
+                testing, SUS scores and One-way ANOVA Statistical test. 
+            </p>
+        </div>
+
+        <div class="box38">
+            <h3 class="sub-heading">End of a 5 Year Journey</h3>
+            <p class="paragraph">
+                Technically this capstone represents the cumulative application of all our knowledge, 
+                co-op experience and engineering expertise that we’ve learned in the past 5 years. Overall 
+                I am extremely proud of what we’ve created and think back to 8 months ago when we were all 
+                on a Zoom call brainstorming about which direction to take our project.
+
+            </p>
+            <p class="paragraph">
+                Although there were some tight deadlines to hand in deliverables and I personally 
+                struggled at times learning about how to program the image recognition software, 
+                this project has helped me grow tremendously technically and design wise. 
+            </p>
+        </div>
+    </div>
+    <div class="wrapper11">
+        <div class="line">
+            <hr/>
+        </div>
+        <div class="foot1">
+            <p class="tag2">
+                Thanks for stopping by,
+            </p>
+            <p class="tag2">
+                Now tell me about yourself.
+            </p> 
+        </div>
+        <div class="foot2">
+            <p class="links">
+                <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="foot3">
+            <div class="links">
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+            </div>
+        </div>
+        <div class="foot4">
+            <p class="tag3">
+                © Edmund Lee 2021
+            </p>
+        </div>
+    </div>
+</body>
+</html>

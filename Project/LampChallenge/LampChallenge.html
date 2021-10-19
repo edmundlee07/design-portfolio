@@ -1,0 +1,329 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styleLampChallenge.css" />
+        <link rel="stylesheet" href="../styleDesign.css">
+        <link rel="stylesheet" href="./breakpoints.css">
+        <script src="../appDesign.js"></script>
+        <title>Japanese Lamp Design</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <script>
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+                jQuery('body').fadeIn(1000);
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if (thetarget = "#"){
+                        break;
+                    }
+                    if (thetarget != "_blank"){			
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            //alert(thehref)
+                            window.location = thehref					
+                        });
+                    }
+                });
+            });
+            setTimeout(function(){
+                jQuery('body').fadeIn();
+            },1000)
+        </script>
+
+        <div class="cover" id="motion1">
+            <nav class="navbar">
+                <h1>
+                    <a href="../../index.html">Edmund / Lee</a>
+                </h1>
+            </nav>
+            
+            <div class="container" onclick="openTopNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="top-nav" class="top-nav">
+                <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+                <div class="overlay">
+                    <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                    <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+                </div>
+            </div>
+            <div class="text-box" id="motion2">
+                <h2>Shōji</h2>
+                <h4>Japanese Lamp Architecture</h4>
+            </div>
+        </div>
+
+        <div class="wrapper1">  
+
+            <div class="box01">
+                <h3 class="sub-heading">Lamp Design Challenge</h3>
+            </div>
+            <div class="box1">   
+                <div class="Details">
+                    <h4>Role</h4>       
+                    <h2>Product Designer</h2>
+                </div>
+                <div class="Details2">
+                    <h4>Tools</h4>
+                    <h2>Solidworks</h2>
+                    <h2>AutoCAD</h2>
+                    <h2>Machine Shop</h2>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="Intro">
+                    <p class="context">
+                        This project is a concept of an architectural styled furniture brought to life. 
+                        Tying both everyday functionality to our living space intrudes a new way in 
+                        how we interact with our furniture. 
+                    </p>
+                    <p class="context">
+                        This lamp design introduces a new way to 
+                        reflect ambient lighting and blends in with the desk environment. 
+                        This lamp subtly stands out in a bold fashion while still delivering a 
+                        lantern like glow to the room.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+            <div class="box1">
+                    <h2 class="title2">Lamp Design Challenge</h2>
+                <div class="Details">
+                    <h4>Purpose</h4>
+                        <h2>Furniture Design Challenge</h2>
+                    <h4>Year</h4>
+                        <h2>2016</h2>
+                    <h4>Role</h4>
+                        <h2>Product Designer</h2>
+                    <h4>Skills</h4>
+                        <h2>Solidworks</h2>
+                        <h2>AutoCAD</h2>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="Intro">
+                    <p class="paragraph">This project is a concept of an architectural styled furniture brought to life. 
+                        Tying both everyday functionality to our living space intrudes a new way in 
+                        how we interact with our furniture. This lamp design introduces a new way to 
+                        reflect ambient lighting and blends in with the desk environment. 
+                        This lamp subtly stands out in a bold fashion while still delivering a 
+                        lantern like glow to the room. 
+                    </p>
+                </div>
+            </div>
+            -->
+            <div class="box3">
+                <div class="shoji">
+                    <img class="picture" src="./images/showcase1.JPG" alt="">
+                    <p class="description">Final Lamp Design</p>
+                </div>
+                <div class="Background">
+                    <h2 class="sub-heading">Project Definition</h2>
+                </div>
+                <div class="Context">
+                    <p class="paragraph">
+                        As part of a final project for my technology design class, everyone was tasked to 
+                        participate in a lamp design competition. The goal of the project was not to fixate 
+                        our designs on traditional lamps but make one that stood out. This project really allowed 
+                        the class to learn the product design process through iterative design. Final Designs 
+                        are judged and voted on by the class and students are given 4 months of class time to 
+                        complete the challenge.
+                    </p>
+                    <ul>
+                        <li>Include a rationale of design in relation to an architectural style</li>
+                        <li>functional with an intended use case</li> 
+                        <li>A unique approach to materials and design</li> 
+                        <li>Environmentally friendly with respectful use of materials</li> 
+                        <li>Include working lighting fixture with no limits on design possibilities</li>       
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="Research">
+                    <h2 class="sub-heading">Research</h2>
+                </div>
+                <div class="Research1">
+                    <p class="paragraph">
+                        Lamps can be considered everyday objects but not something we’d consider 
+                        as a difficult concept to design. Ideas from similar competitions such as the 
+                        "international lighting design competition and exhibition" displayed outstanding 
+                        designs but none of that caliber were attainable with the timeline, materials 
+                        available and purpose of the project. Popular websites such as Wayfair, Ikea 
+                        and Walmart all contained lamps found in thousands of households, but I wanted 
+                        something that was unique and functional.
+                    </p>
+                    
+                    <div class="shoji">
+                        <img class="picture" src="./images/shoji.jpeg" alt="">
+                        <p class="description">Source: Ikea Interior Design Ideas</p>
+                    </div>
+                    
+                    <p class="paragraph">Lamps are essentially a lighting device that can can be used in any situation.
+                        The intended purpose was for this lamp to be utilized on a desk environment.
+                        This lamp would be primarily used by users who work at a desk and don't have
+                        plenty of desk space. The intended purpose that the design will cater to
+                        are as follows:
+                    </p>
+                    <ul class="paragraph">
+                        <li>Blend into the user's office, desk and living environment</li>
+                        <li>Device to provide additional lighting for reading in bed, brightening dim areas on the desk or back lighting</li>
+                        <li>Aesthetically pleasing lamp that resembles Japanese architecture</li>
+                        <li>Lamp promotes user interactivity with a modular frame</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="Formulaton">
+                    <h2 class="sub-heading">Sketching</h2>
+                    <p class="paragraph">
+                        Preliminary sketches translating research and formulating ideas into tangible decisions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box6">
+                <div class="sketches">
+                    <img class="picture" src="./images/sketch1.jpg" alt="">
+                    <p class="description">Initial ideation sketches and inspiration</p>
+                </div>
+            </div>
+
+            <div class="box7">
+                <div class="sketches">
+                    <img class="picture" src="./images/sketch2.jpg" alt="">
+                    <p class="description">Experimentation with "Z" shape concept</p>
+                </div>  
+            </div>
+
+            <div class="box8">
+                <div class="Rationale">
+                    <h2 class="sub-heading">Design Features</h2>
+                </div>
+                <div class="Rationale1">
+                    <p class="paragraph">
+                        Growing up Japanese Architecture has 
+                        always fascinated me with its simplicity, use of natural materials, elegance 
+                        and function.Shōji is a Japanese sliding door to help segregate different rooms 
+                        and augment the internal space of a room. It was ultimately the driving force 
+                        behind the overall design aesthetic as it had met all required competition criteria.
+                    </p>
+                    <div class="sketches">
+                        <img class="picture" src="./images/sketch3.jpg" alt="">
+                        <p class="description">Possible integration of Japanese sliding doors</p>
+                    </div>
+            
+                    <p class="paragraph">
+                        The idea behind Shōji was to design a lamp to be versatile, resourceful and 
+                        multifunctional to give off a certain modern and simplistic vibe to the user. 
+                        The Shōji is ideally used to give the user the ability to satisfy their intended 
+                        use of the light source based on the placement of the wooden panels on the lamp frame. 
+                        The inspiration for the lamp head sprouted from traditional Japanese living quarters which 
+                        had rooms mainly consisting of wood and were separated by wooden sliding doors with wax paper.
+                    </p> 
+                </div>
+                <div class="sketches">
+                    <img class="picture" src="./images/component.jpg" alt="">
+                    <p class="description">Solidworks pre-render, measure twice cut once</p>
+                </div>
+            </div>
+
+            <div class="box9">
+                <div class="Showcase">
+                    <h2 class="sub-heading">Final Design</h2>
+                </div>
+                <div class="Showcase1">
+                    <div class="sketches">
+                        <img class="picture" src="./images/showcase1.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box10">
+                <div class="sketches">
+                    <img class="picture" src="./images/showcase2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="box11">
+                <div class="sketches">
+                    <img class="picture" src="./images/showcase3.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="box12">
+                <div class="sketches">
+                    <img class="picture" src="./images/showcase4.JPG" alt="">
+                </div>
+            </div>
+
+            <div class="box13">
+                <div class="PotentialImprovements">
+                    <h2 class="sub-heading">Next Steps and Potential Improvements</h2>
+                </div>
+                <div class="PotentialImprovements1">
+                    <ul class="paragraph">
+                        <li>Introduce a spring extension so that the lamp can move up and down on the support rods</li>
+                        <li>Utilize different types of woods for a more robust figure and different aesthetic</li> 
+                        <li>Magnetic lighting panels to allow placement on the bottom and side</li> 
+                        <li>Integrated LED solution with an internal battery and solar charger</li> 
+                        <li>Pull out drawers in the base to store frequently used items</li>       
+                    </ul>   
+                </div>
+            </div>
+        </div>
+        <div class="wrapper6">
+            <div class="line">
+                <hr/>
+            </div>
+            <div class="foot1">
+                <p class="tag2">
+                    Thanks for stopping by,
+                </p>
+                <p class="tag2">
+                    Now tell me about yourself.
+                </p> 
+            </div>
+            <div class="foot2">
+                <p class="links">
+                    <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                    <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="foot3">
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+                </div>
+            </div>
+            <div class="foot4">
+                <p class="tag3">
+                    © Edmund Lee 2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

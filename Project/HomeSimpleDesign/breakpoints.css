@@ -1,0 +1,608 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    /*Setting the story - Wrapper*/
+    .wrapper1 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*My role intro content - Wrapper*/
+    .wrapper2 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+
+    /*Problem Definition - Wrapper*/
+    .wrapper3 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Design Challenge - Wrapper*/
+    .wrapper4 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Product Goasl - Wrapper*/
+    .wrapper5 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*From a user's perspective - Wrapper*/
+    .wrapper6 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Design Adjustments - Wrapper*/
+    .wrapper7 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Brand - Wrapper*/
+    .wrapper8 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Solutions - Wrapper*/
+    .wrapper9 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Results - Wrapper*/
+    .wrapper10 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Footer*/
+    .wrapper11 {
+        grid-template-columns: 1fr 200px 200px 200px 200px 1fr;
+    }
+
+    /*Footer*/
+    .tag2{
+        line-height: 1.2em;
+        font-size: 2.2em;
+    }
+    .links a{
+        font-size: 1.2em;
+    }
+        
+
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+        /*Cover Text*/
+        .text-box h2 {
+            font-size: 28px;
+            line-height: 27.8px;
+            font-weight: 500;
+        }
+        
+        .text-box h4 {
+            font-family: Manrope;
+            font-size: 56px;
+            font-weight: 500;
+            padding-bottom: 200px;
+            line-height: 64px;
+        }
+
+        .heading {
+            font-size: 16px;
+        }
+        
+        .sub-heading {
+            font-size: 26px;
+        }
+        
+        .paragraph {
+            font-size: 18px;
+        }
+
+        /*feature padding*/
+
+        .box31 {
+            padding-top: 50%;
+        }
+    
+        /*Setting the story - Wrapper*/
+        .wrapper1 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*My role intro content - Wrapper*/
+        .wrapper2 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+    
+        /*Problem Definition - Wrapper*/
+        .wrapper3 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Design Challenge - Wrapper*/
+        .wrapper4 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Product Goasl - Wrapper*/
+        .wrapper5 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*From a user's perspective - Wrapper*/
+        .wrapper6 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Design Adjustments - Wrapper*/
+        .wrapper7 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Brand - Wrapper*/
+        .wrapper8 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Solutions - Wrapper*/
+        .wrapper9 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+    
+        /*Results - Wrapper*/
+        .wrapper10 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+
+        /*Footer*/
+        .wrapper11 {
+            grid-template-columns: 0.5fr 150px 150px 150px 150px 0.5fr;
+        }
+
+        .tag2{
+            line-height: 1.5em;
+            font-size: 1.5em;
+        }
+        .links a{
+            font-size: 1em;
+            padding-right: 6%;
+        }
+    
+        .foot2{
+            grid-column: 4/7;
+            grid-row: 2/4;
+        }
+    
+        .foot3{
+            grid-column: 4/7;
+            grid-row: 3/5;
+        }
+
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 426px) and (max-width: 767px) {
+    /*Cover Text*/
+    .text-box h2 {
+        font-size: 1em;
+        line-height: 27.8px;
+        font-weight: 500;
+    }
+    
+    .text-box h4 {
+        font-family: Manrope;
+        font-size: 2.5em;
+        font-weight: 500;
+        padding-bottom: 200px;
+        line-height: 64px;
+    }
+
+    .context{
+        font-size: 18px;
+    }
+    
+    .heading {
+        font-size: 16px;
+    }
+    
+    .sub-heading {
+        font-size: 26px;
+    }
+    
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /*My Role*/
+
+    .box01{
+        grid-column: 2/5;
+        grid-row: 1/2;
+    }
+   
+    .box2 {
+        grid-column: 2/6;
+        grid-row: 2/5;
+        padding-bottom: 0%;
+    }
+
+    .context{
+        padding-top: 0%;
+        padding-right: 0%;
+    }
+    
+    .box1 {
+        grid-column: 2/6;
+        grid-row: 5/7;
+    }
+
+    .Details h2 {
+         padding-bottom: 0%;
+         font-size: 1rem;
+    }
+    
+    .Details h4 {
+        padding-top: 1rem;
+        padding-top: 0%;
+    }
+    
+    .Details2 h2 {
+        padding: 0;
+        font-size: 1rem;
+    }
+    
+    .Details2 h4 {
+        padding-top: 0rem;
+        font-size: 1rem;
+    }
+
+
+    /*feature padding*/
+
+    .box31 {
+        padding-top: 50%;
+    }
+
+    /*Setting the story - Wrapper*/
+    .wrapper1 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*My role intro content - Wrapper*/
+    .wrapper2 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+
+    /*Problem Definition - Wrapper*/
+    .wrapper3 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Design Challenge - Wrapper*/
+    .wrapper4 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Product Goasl - Wrapper*/
+    .wrapper5 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*From a user's perspective - Wrapper*/
+    .wrapper6 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Design Adjustments - Wrapper*/
+    .wrapper7 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Brand - Wrapper*/
+    .wrapper8 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Solutions - Wrapper*/
+    .wrapper9 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Results - Wrapper*/
+    .wrapper10 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    /*Footer Wrapper*/
+    .wrapper11 {
+        grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr 0.25fr;
+    }
+
+    .line{
+        padding-top: 10%;
+    }
+
+    .foot1{
+        grid-column: 2/7;
+        grid-row: 2/4;
+        padding-left: 0;
+    }
+    .foot2{
+        grid-column: 2/5;
+        grid-row: 4/6;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .foot3{
+        grid-column: 2/5;
+        grid-row: 6/8;
+        padding-left: 0;
+    }
+    .foot4{
+        grid-column: 2/5;
+        grid-row: 8/10;
+        padding-left: 0;
+    }
+
+    .tag2{
+        line-height: 1.4em;
+        font-size: 1.8em;
+    }
+
+    .links a{
+        font-size: 1em;
+        padding-right: 5%;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 425px) {
+        /*Cover Text*/
+        .text-box h2 {
+            font-size: 1em;
+            line-height: 27.8px;
+            font-weight: 500;
+        }
+        
+        .text-box h4 {
+            font-family: Manrope;
+            font-size: 1.8em;
+            font-weight: 500;
+            padding-bottom: 200px;
+            line-height: 40px;
+        }
+    
+        .context{
+            font-size: 18px;
+        }
+        
+        .heading {
+            font-size: 16px;
+        }
+        
+        .sub-heading {
+            font-size: 26px;
+        }
+        
+        .paragraph {
+            font-size: 18px;
+        }
+    
+        .description {
+            font-size: 14px;
+        }
+    
+        /*My Role*/
+    
+        .box01{
+            grid-column: 2/5;
+            grid-row: 1/2;
+        }
+       
+        .box2 {
+            grid-column: 2/6;
+            grid-row: 2/5;
+            padding-bottom: 0%;
+        }
+    
+        .context{
+            padding-top: 0%;
+            padding-right: 0%;
+        }
+        
+        .box1 {
+            grid-column: 2/6;
+            grid-row: 5/7;
+        }
+    
+        .Details h2 {
+             padding-bottom: 0%;
+             font-size: 1rem;
+        }
+        
+        .Details h4 {
+            padding-top: 1rem;
+            padding-top: 0%;
+        }
+        
+        .Details2 h2 {
+            padding: 0;
+            font-size: 1rem;
+        }
+        
+        .Details2 h4 {
+            padding-top: 0rem;
+            font-size: 1rem;
+        }
+    
+    
+        /*feature highlight*/
+        .box25 {
+            grid-column: 2/6;
+            grid-row: 1/37;
+            padding-bottom: 0%;
+            padding-top: 10%;
+        }
+
+        .box27 {
+            grid-column: 2/6;
+            grid-row: 38/38;
+            padding-top: 0%;
+            padding-left: 0%;
+        }
+
+        .box26{
+            grid-column: 2/6;
+            grid-row: 39/39;
+            padding-top: 5%;
+        }   
+
+        .box29 {
+            padding-top: 0%;
+            padding-left: 0%;
+            grid-column: 2/6;
+            grid-row: 43/44;
+        }
+
+        .box28 {
+            grid-column: 2/6;
+            grid-row: 44/45;
+            padding-top: 5%;
+        }
+        
+        .box31 {
+            padding-top: 5%;
+            padding-left: 0%;
+            grid-column: 2/6;
+            grid-row: 45/46;
+        }
+    
+        .box30 {
+            grid-column: 2/6;
+            grid-row: 46/47;
+            padding-bottom: 0%;
+        }
+
+        .box33 {
+            padding-bottom: 15%;
+        }
+        
+        
+        /*Setting the story - Wrapper*/
+        .wrapper1 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*My role intro content - Wrapper*/
+        .wrapper2 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+    
+        /*Problem Definition - Wrapper*/
+        .wrapper3 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Design Challenge - Wrapper*/
+        .wrapper4 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Product Goasl - Wrapper*/
+        .wrapper5 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*From a user's perspective - Wrapper*/
+        .wrapper6 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Design Adjustments - Wrapper*/
+        .wrapper7 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Brand - Wrapper*/
+        .wrapper8 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Solutions - Wrapper*/
+        .wrapper9 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+    
+        /*Results - Wrapper*/
+        .wrapper10 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+
+        /*Footer*/
+        .wrapper11 {
+            grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 0.15fr;
+        }
+
+        .line{
+            padding-top: 10%;
+        }
+    
+        .foot1{
+            grid-column: 2/7;
+            grid-row: 2/4;
+            padding-left: 0;
+        }
+        .foot2{
+            grid-column: 2/5;
+            grid-row: 4/6;
+            padding-left: 0;
+            padding-top: 0;
+        }
+        .foot3{
+            grid-column: 2/5;
+            grid-row: 6/8;
+            padding-left: 0;
+        }
+        .foot4{
+            grid-column: 2/5;
+            grid-row: 8/10;
+            padding-left: 0;
+        }
+    
+        .tag2{
+            line-height: 1.4em;
+            font-size: 1.6em;
+        }
+    
+        .links a{
+            font-size: 1em;
+            padding-right: 3%;
+        }
+
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../styleDesign.css">
+        <link rel="stylesheet" type="text/css" href="./styleUWPortal.css"/>
+        <link rel="stylesheet" href="./breakpoints.css">
+        <script src="../appDesign.js"></script>
+        <title>UW Portal Design Challenge</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <script>
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+                jQuery('body').fadeIn(1000);
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if (thetarget = "#"){
+                        break;
+                    }
+                    if (thetarget != "_blank"){			
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            //alert(thehref)
+                            window.location = thehref					
+                        });
+                    }
+                });
+            });
+            setTimeout(function(){
+                jQuery('body').fadeIn();
+            },1000)
+        </script>
+
+        <div class="cover" id="motion1">
+            <nav class="navbar">
+                <h1>
+                    <a href="../../index.html">Edmund / Lee</a>
+                </h1>
+            </nav>
+            
+            <div class="container" onclick="openTopNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="top-nav" class="top-nav">
+                <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+                <div class="overlay">
+                    <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                    <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+                </div>
+            </div>
+            <div class="text-box" id="motion2">
+                <h2>UW Portal</h2>
+                <h4>Service Design Challenge</h4>
+            </div>
+        </div>
+
+        <div class="wrapper1"> 
+
+            <div class="box01">
+                <h3 class="sub-heading">My Role</h3>
+            </div>
+            <div class="box1">   
+                <div class="Details">
+                    <h4>Role</h4>       
+                    <h2>UX Designer</h2>
+                </div>
+                <div class="Details2">
+                    <h4>Purpose</h4>
+                    <h2>Service Design Flow</h2>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="Intro">
+                    <p class="context">
+                        The University of Waterloo is showing signs of deterioration and aging after decades of use. 
+                        The university wishes to design a new experience that allows students to help report building or equipment 
+                        issues on campus. Students can currently report issues but the lack of communication and poor response times 
+                        hinders the adoption amongst students.  
+                    </p>
+                    <p class="context">
+                        Therefore, an additional Service Request feature was designed with the intention to 
+                        provide a convenient and intuitive front-facing user interface that leverages the current UW Portal 
+                        application to encourage the utilization of plant operations.
+                    </p>
+                </div>
+            </div>
+            <!--
+            <div class="box1">
+                    <h2 class="title2">UW Portal Service Request</h2>
+                <div class="Details">
+                    <h4>Purpose</h4>
+                        <h2>1 Week Design Challenge</h2>
+                    <h4>Year</h4>
+                        <h2>2020</h2>
+                    <h4>Skills</h4>
+                        <h2>UX Research</h2>
+                        <h2>Interaction Design</h2>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="Intro">
+                    <p class="paragraph">
+                        The University of Waterloo is showing signs of deterioration and aging after decades of use. 
+                        The university wishes to design a new experience that allows students to help report building or equipment 
+                        issues on campus. Students currently can report issues but the lack of communication and poor response times 
+                        hinders the adoption amongst students. Therefore, an additional Service Request feature was designed with the intention to 
+                        provide a convenient and intuitive front-facing user interface that leverages the current UW Portal 
+                        application to encourage the utilization of plant operations. 
+                    </p>
+                </div>
+            </div>
+            -->
+            <div class="box3">
+                <div class="mockup">
+                    <img class="picture" src="./images/mockup.jpg" alt="">
+                    <p class="description">High fidelity prototype of service request feature</p>
+                </div>
+            </div>
+
+            <div class="box4">
+                <h2 class="sub-heading">Problem Definition</h2>
+                <p class="paragraph">
+                    Our design challenge goal is to design an experience that allows students to report building or 
+                    equipment issues on campus, considering for the process of filing and acting on the issues. 
+                    It is visible that the university’s campus is aging due to daily use with constant repairs 
+                    which need to be done with limited staff and budget. 
+                </p>
+                <p class="paragraph">
+                    For the past decade, students have the option of calling a 24/7 hotline for urgent issues or send an email 
+                    to the school for non-urgent issues. However, due to low site visibility, poor communication and slow response 
+                    times it is difficult for users to be proactive in taking responsibility to report problems on campus. 
+                    Thus, resulting in poor campus maintenance and further deterioration of the university’s buildings. 
+                </p>
+                <div class="current">
+                    <img class="picture" src="./images/current.JPG" alt="">
+                    <p class="description">Current webpage to report campus maintenance issues</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper3">
+            <div class="box5">
+                <h2 class="sub-heading">Product Goal</h2>
+                <p class="paragraph">
+                    To increase overall campus health and safety, the new service request feature must be convenient, 
+                    efficient, safe, accessible and provide a variety of options to help report issues on campus. 
+                    The new system must be able to integrate within student workflows and increase communication 
+                    between plant operations staff and students. The new system must work 24/7 all year-round and 
+                    be integrated within the University’s current ecosystem of applications. 
+                </p>
+            </div>
+        </div>
+
+        <div class="wrapper5">
+            <div class="box6">
+                <h2 class="sub-heading">User Experience Goals</h2>
+                <p class="paragraph">
+                    Using the Microsoft’s Desirability toolkit, I was able to make a list of user experience goals that 
+                    I wanted users to feel when using the new system. This toolkit assisted in identifying what emotions 
+                    we want to elicit from the user before, during and after the use of the system, resulting in the 
+                    following user experience goals 
+                </p>
+                <ul class="paragraph">
+                    <li>Users should trust the system and university plant operations staff that their request will be completed</li>
+                    <li>Users should feel confident in being able to know how to contact the school when reporting a 
+                        maintenance issue and that they’ve included adequate information</li>
+                    <li>Users should feel that the system is convenient and easy to use without hesitation, users should not be 
+                        hesitant to report any maintenance or repair issues on campus</li> 
+                    <li>Users should feel confident in the system and sense that it is a reliable method of reporting issues 
+                        that will be attended to</li> 
+                </ul>
+            </div> 
+        </div>
+
+        <div class="wrapper4">
+            <div class="box7">
+                <h2 class="sub-heading">Usability Goals</h2>
+                <ul class="paragraph">
+                    <li>The core feature of the new system is to ensure that users can report an incident to the highest degree of detail. 
+                        Missing details in reports lowers the overall efficiency as can result in longer response time</li>
+                    <li>It is crucial for the new reporting system to not take away any key functionality that is already in place. 
+                        The new system must enhance the quality of information received and aid in the comprehension for plant operations 
+                        to take appropriate actions.</li>
+                    <li>The design for the new system must also be accessible for the 30,000+ students on campus. 
+                        All students with or without a disability should be able to report an issue with the same level of clarity 
+                        and detail like any other member would.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper6">
+            <div class="box9">
+                <h2 class="heading">Process</h2>
+                <h3 class="sub-heading">1. Value Proposition</h3>
+                <p class="paragraph">
+                    I reached out to the Universities Plant Operations office and got in touch with the plant operations manager Jennifer Letson. 
+                    After a series of emails and conversations I learned that university receives on average 30+ requests per week from issues 
+                    ranging from mechanical issues to coffee spills in classrooms which then need to be manually assigned to the appropriate team. 
+                    What Jennifer believes is that the university should have a better system that allows students to report issues efficiently, 
+                    is effective in helping maintain the campus and is accessible to all members of the university to use. 
+                </p>
+            </div>
+
+            <div class="box11">
+                <h3 class="sub-heading">2. Understanding our Users</h3>
+                <p class="paragraph">
+                    To understand what current user pain points exist in the service, I conducted 6 user interviews with
+                    students and staff who previously had interactions with plant services. Below are quotes 
+                    extracted from user interviews, capturing their overall sentiment. 
+                </p>
+                <div class="testing">
+                    <img class="picture" src="./images/studentsurveys.jpg" alt="">
+                    <p class="description">Quotes extracted from user interviews with students</p>
+                </div> 
+            </div>
+
+            <div class="box12">
+                <div class="testing">
+                    <img class="picture" src="./images/custodiansurveys.png" alt="">
+                    <p class="description">Quotes extracted from user interviews with plant operations employees</p>
+                </div> 
+            </div>
+
+            <div class="box13">
+                <h3 class="sub-heading">3. Service Design Blueprint</h3>
+                <p class="paragraph">
+                    With the help of Plant Operations Manger Jennifer Letson, I was able to construct a service design 
+                    blueprint containing behind the scenes technologies and actors that play the part in helping resolve 
+                    campus maintenance requests. This helped me visualize the relationship between service components and 
+                    identify current user pain points
+                </p>
+                <ul class="paragraph">
+                    <li>Users had trouble knowing when someone was coming and how long it was going to take. 
+                        It was often easier to just ignore the issue and let someone else take care of it</li>
+                    <li>Users also had trouble knowing what exact information was needed and therefore lacked 
+                        the knowledge to put what was required by plant operations dispatch staff</li>
+                    <li>Users had limited knowledge on how to contact plant services and the variety of 
+                        services plant operations offer for the campus</li>
+                </ul>
+                <div class="servicedesign">
+                    <img class="picture" src="./images/servicedesign.jpg" alt="">
+                    <p class="description">Service Design Blueprint of plant operations at the University of Waterloo</p>
+                </div> 
+            </div>
+
+            <div class="box14">
+                <h3 class="sub-heading">4. Assumptions</h3>
+                <ul class="paragraph">
+                    <li>Waterloo has a suite of mobile applications, WAT Safe for general student safety and UW Portal, 
+                        a digital campus toolkit. I decided to integrate my current solution within UW Portal, an application 
+                        designed to be the central hub for Waterloo students to access their timetable to campus services</li>
+                    <li>Integrating with the UW Portal App meant that specific branding and typography had to be used to 
+                        simulate realistic integration within plant operation services</li>
+                    <li>I assumed that the most ideal and feasible solution that most users would want to adopt would be a 
+                        mobile solution due to the ever-growing convenience of our smartphones</li>
+                </ul>
+            </div>
+
+            <div class="box15">
+                <h3 class="sub-heading">5. Sketching Session</h3>
+                <p class="paragraph">
+                    Now with key pain points, product goals and product features in mind, I proceeded to sketch
+                    low level wireframes to illustrate all my thoughts on paper
+                </p>
+                <div class="sketching">
+                    <img class="picture" src="./images/sketches.jpg" alt="">
+                    <p class="description">Lo-fi initial sketching of user flow in application</p>
+                </div> 
+            </div>
+
+            <div class="box16">
+                <h3 class="sub-heading">6. Wireframe Flow</h3>
+                <p class="paragraph">
+                    From there I went onto translate my rough sketches and product features into medium fidelity
+                    wireframes, picking and choosing the most appropriate product path
+                </p>
+                <div class="wireframe">
+                    <img class="picture" src="./images/wireframe.jpg" alt="">
+                    <p class="description">Medium fidelity wireframes of application user flow</p>
+                </div> 
+            </div>
+
+            <div class="box17">
+                <h3 class="sub-heading">7. Color and Typography</h3>
+                <p class="paragraph">
+                    Due to integration with UW Portal, I was limited to the type of font and color palette tolerance allowed.
+                    Colors an typography are laid out to give an overall feel for the consistent styling used.
+                </p>
+                <div class="color">
+                    <img class="picture" src="./images/colorpalette.jpg" alt="">
+                    <p class="description">Typography and color palette of UW Portal Application</p>
+                </div> 
+            </div>
+
+            <div class="box18">
+                <h3 class="sub-heading">8. Feature Details</h3>
+                <p class="paragraph">
+                    In this new feature, users now have the option to submit new requests, keep track of existing requests 
+                    as well as enables to open for users to see the status of their request. Once a user decides to make a request 
+                    for plant services they are prompted with a decision for urgent and non-urgent issues, this helps divert issues 
+                    that are truly urgent to help right away and other non-urgent issues to be entered the CMS and assigned accordingly. 
+                    Next users can quickly categorize and add supporting details such as a description or media assists to give plant 
+                    services a better understanding of the maintenance issue. 
+                </p>
+                <p class="paragraph">
+                    In addition, With the integration of Google Maps, users can also find the specific room and room level or 
+                    manually enter in the location. Finally, users can see a final summary of their request details which will be 
+                    sent to plant operations. Upon submission plant operations can now dispatch the appropriate teams without missing 
+                    information and students can go back to view issue status, edit details and view who is going to help them for a 
+                    more personalized experience with University staff. 
+                </p>
+            </div>
+
+            <div class="box19">
+                <h3 class="sub-heading">9. Final Result</h3>
+                <p class="paragraph">
+                    Finally, the summation of my following efforts have led to this first iteration
+                </p>
+            </div>
+
+            <div class="box20">
+                <div class="finalmockup">
+                    <img class="picture" src="./images/finalmockup.jpg" alt="">
+                    <p class="description">Final UW Portal Service Flow</p>
+                </div>
+            </div>
+
+            <div class="box21">
+                <h2 class="sub-heading">Conclusion</h2>
+                <p class="paragraph">
+                    Upon the completion of version 1.0 of the service request feature, initial early prototype 
+                    testing was done on the design and classmates helped with providing feedback and comments of what 
+                    their ideal user experience was. Depending on your audience and who tests your solution, there 
+                    may be a certain bias requiring the designer to filter out the “noise” and extract what really 
+                    matter. It was difficult to design a system from the group up with no real existing experience, 
+                    I would like to pursue pilot testing to test the likelihood of campus wide adoption.
+                </p> 
+                <p class="paragraph">
+                    For future continuations of this project, I would continue to investigate the viability of 
+                    the service request feature as well as other digital experiences through a desktop platform or process 
+                    improvements to University of Waterloo’s plant operations.
+                </p>
+            </div>
+        </div>
+        <div class="wrapper7">
+            <div class="line">
+                <hr/>
+            </div>
+            <div class="foot1">
+                <p class="tag2">
+                    Thanks for stopping by,
+                </p>
+                <p class="tag2">
+                    Now tell me about yourself.
+                </p> 
+            </div>
+            <div class="foot2">
+                <p class="links">
+                    <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                    <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="foot3">
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+                </div>
+            </div>
+            <div class="foot4">
+                <p class="tag3">
+                    © Edmund Lee 2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

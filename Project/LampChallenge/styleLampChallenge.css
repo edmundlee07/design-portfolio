@@ -1,0 +1,408 @@
+/*GLobal Variables*/
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: IBM Plex;
+    font-weight: 580;
+    line-height: 1.8em;
+}
+
+/*Global Properties for all*/
+.heading {
+    padding-top: 5%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #999999;
+    line-height: 20px;
+    font-family: Karla;
+    font-weight: 600;
+}
+
+.sub-heading {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    font-family: Karla;
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 5px;
+}
+
+.paragraph {
+    font-family: Karla;
+    line-height: 34px;
+    color: #222222;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.description {
+    font-family: Karla;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1.5rem;
+    color: #000000;
+}
+
+.picture img{
+    width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+/* Cover Image Properies*/
+.cover{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*fixed = parallax, scroll = normal*/
+    background-attachment: fixed;
+}
+
+.cover{
+    background-image: url(./images/cover2.jpg);
+    min-height: 100%;
+}
+
+/* Cover Image Title*/
+
+.cover .text-box {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    color: white;
+}
+
+.text-box h2 {
+    font-family: Manrope;
+    font-size: 35px;
+    line-height: 27.8px;
+    font-weight: 500;
+    padding-left: 20%;
+    padding-bottom: 5%;
+    margin: 0;
+}
+
+.text-box h4 {
+    font-family: Manrope;
+    font-size: 86px;
+    font-weight: 700;
+    padding-left: 20%;
+    padding-bottom: 250px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    line-height: 100px;
+}
+
+
+.wrapper1{
+    display: grid;
+    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
+    padding-top: 5%;
+    background-color: white;
+}
+
+
+/*Details*/
+.box01{
+    grid-column: 2/5;
+    grid-row: 1/4;
+}
+
+.box1{
+    grid-column: 5/6;
+    grid-row: 4/7;
+}
+
+/*Context*/
+.box2{
+    grid-column: 2/5;
+    grid-row: 4/7;
+    padding-bottom: 10%;   
+}
+
+/*My Role*/
+.context{
+    font-family: Karla;
+    line-height: 28px;
+    color: #222222;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 2%;
+    padding-right: 7%;
+}
+
+.Details h2 {
+    color: #000000;
+    font-size: 1.2rem;
+    padding-bottom: 8%;
+    font-family: Karla;
+}
+
+.Details h4 {
+    font-family: Karla;
+    color: #c9c4c4;
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.Details2 h2 {
+    color: #000000;
+    font-size: 1.2rem;
+    padding: 0;
+    font-family: Karla;
+}
+
+.Details2 h4 {
+    font-family: Karla;
+    color: #c9c4c4;
+    padding-top: 1rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+/*Background*/
+.box3{
+    grid-column: 2/6;
+    grid-row: 7/10;  
+}
+
+/*Research and shoji img*/
+.box4{
+    grid-column: 2/6;
+    grid-row: 10/12;  
+}
+
+.shoji img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+/*Formulation*/
+.box5{
+    grid-column: 2/6;
+    grid-row: 12/14;  
+}
+
+/*Sketches*/
+.box6{
+    grid-column: 2/4;
+    grid-row: 14/15;      
+}
+
+.sketches img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.box7{
+    grid-column: 4/6;
+    grid-row: 14/15;      
+}
+
+.sketches img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+/*Rationale*/
+.box8{
+    grid-column: 2/6;
+    grid-row: 15/18;  
+}
+
+/*Showcase*/
+.box9{
+    grid-column: 2/6;
+    grid-row: 18/20;    
+}
+
+.box9 .showcase{
+    padding-bottom: 5%;   
+}
+
+
+
+.box10{
+    grid-column: 2/4;
+    grid-row: 20/21;    
+}
+
+.box11{
+    grid-column: 4/6;
+    grid-row: 20/21;    
+}
+
+.box12{
+    grid-column: 2/6;
+    grid-row: 21/23;       
+}
+
+.box13{
+    grid-column: 2/6;
+    grid-row: 23/25; 
+    padding-bottom: 15%;    
+}
+
+.box14{
+    grid-column: 2/6;
+    grid-row: 25/27;     
+}
+
+.box14 hr{
+    opacity: 0.2;   
+}
+
+
+/*Footer*/
+.wrapper6 {
+    display: grid;
+    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
+    grid-gap: 0.7em;
+    background-color: white;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+/*Footer Line*/
+.line{
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*Footer*/
+.foot1{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    padding-top: 10%;
+    padding-left: 25%;
+    padding-bottom: 5%;
+}
+
+.tag2{
+    font-family: Manrope;
+    line-height: 1.5em;
+    color: #1B1A38;
+    font-size: 3em;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.foot2{
+    grid-column: 4/7;
+    grid-row: 2/4;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.links a{
+    font-family: Manrope;
+    text-decoration: none;
+    line-height: 1.3em;
+    color: #1B1A38;
+    font-size: 2em;
+    font-weight: 500;
+    padding-right: 10%;
+    margin: 0;
+}
+
+.links a:hover{
+    color: #A2BBA5;
+    transition: 0.5s ease;
+    transition-delay: .5s;
+    transition: 0.5s ease-out;
+}
+
+.foot3{
+    grid-column: 4/7;
+    grid-row: 3/5;
+    padding-left: 20%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.tag3{
+    font-family: Manrope;
+    line-height: 0.8em;
+    color: #acacac; 
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-top: 56px;
+}
+
+.foot4{
+    grid-column: 1/4;
+    grid-row: 4/6;
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-bottom: 15%;
+}
+
+
+/*Intro Motion*/
+#motion1{
+    -webkit-animation: 2s ease 0s normal forwards 1 fadein1;
+    animation: 2s ease 0s normal forwards 1 fadein1;
+    opacity: 0;
+}
+
+@keyframes fadein1{
+    0% { opacity:0;}
+    66% { opacity:0}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein1{
+    0% { opacity:0;}
+    66% {  opacity:0}
+    100% { opacity:1;}
+}
+
+#motion2{
+    -webkit-animation: 3s ease 1s normal forwards 1 fadein2;
+    animation: 3s ease 1s normal forwards 1 fadein2;
+    opacity: 0;
+}
+
+@keyframes fadein2{
+    0% { opacity:0;}
+    33% { opacity:0; transform: translatey(50px);}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein2{
+    0% { opacity:0;}
+    33% {  opacity:0; transform: translatey(50px);}
+    100% { opacity:1;}
+}

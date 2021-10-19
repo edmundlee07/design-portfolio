@@ -1,0 +1,200 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./styleUIDesign.css" />
+        <link rel="stylesheet" href="../styleDesign.css">
+        <link rel="stylesheet" href="./breakpoints.css">
+        <script src="../appDesign.js"></script>
+        <title>UI Concept Collection</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel='shortcut icon' type='image/ico' href="../../favicon.ico">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <script>
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+                jQuery('body').fadeIn(1000);
+                jQuery('a').on('click',function(event){
+                    var thetarget = this.getAttribute('target')
+                    if (thetarget = "#"){
+                        break;
+                    }
+                    if (thetarget != "_blank"){			
+                        var thehref = this.getAttribute('href')
+                        event.preventDefault();
+                        jQuery('body').fadeOut(function(){
+                            //alert(thehref)
+                            window.location = thehref					
+                        });
+                    }
+                });
+            });
+            setTimeout(function(){
+                jQuery('body').fadeIn();
+            },1000)
+        </script>
+
+        <div class="cover" id="motion1">
+            <nav class="navbar">
+                <h1>
+                    <a href="../../index.html">Edmund / Lee</a>
+                </h1>
+            </nav>
+            
+            <div class="container" onclick="openTopNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div id="top-nav" class="top-nav">
+                <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+                <div class="overlay">
+                    <a href="../../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+                    <a href="../../About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+                </div>
+            </div>
+            <div class="text-box" id="motion2">
+                <h2>UI Collection</h2>
+                <h4>Professional and Concept Work</h4>
+            </div>
+        </div>
+
+        <div class="wrapper1">  
+            <div class="box1">
+                <div class="Introduction">
+                    <h2 class="sub-heading">First and Foremost...</h2>
+                </div>
+                <div class="Introduction1">
+                    <p class="paragraph">
+                        These designs are part of a growing library of experiments and ideas that I've had 
+                        or work that I've done during for other companies. These designs are potential design
+                        solutions for existing problems. This collection is documentation of my growth as a 
+                        product designer and as a person.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="Concept1">
+                    <h2 class="sub-heading">Loket Castle Showcase</h2>
+                    <p class="paragraph">
+                        I really wanted a way to show off my photography so what better way than to make 
+                        a dashboard / landing page on the Loket Castle for tourists. Basic information 
+                        such as the weather and quick description of the castle is enough for most while 
+                        subjects such as architecture and history are more for the curious
+                    </p>
+                    <div class="picture">  
+                        <img src="./images/LoketCastleShowcase.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="Concept2">
+                    <h2 class="sub-heading">Canada Life Advisor Hub</h2>
+                    <p class="paragraph">
+                        The purpose behind the page was to provide a single point of contact for insurance 
+                        advisors, field managers and whole sales to access information about the master 
+                        brand initiative in the form of an advisor hub. This is a place where advisors 
+                        can come to download information on the Canada Life rebrand to deliver to their 
+                        clients and improve the user experience for advisors for getting their questions 
+                        answered efficiently
+                    </p>
+                    <div class="picture1">
+                        <img src="./images/AdvisorHub.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="Concept3">
+                    <h2 class="sub-heading">Takai Food Price Tracking UI</h2>
+                    <p class="paragraph">
+                        A concept Food price tracking interface displaying information from price history, 
+                        supermarket vendor and price records for the selected product. The intended use 
+                        is for users to search a product they wish to purchase and to verify or price 
+                        match that the price they’re getting from the supermarket is the best one
+                    </p>
+                    <div class="picture">
+                        <img src="./images/ProjectTakai.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="Concept4">
+                    <h2 class="sub-heading">Portfolio Landing Page</h2>
+                    <p class="paragraph">
+                        Testing out a concept photography portfolio landing page for a basic webpage. 
+                        Very basic, eye catching and to the point landing page for most visitors. 
+                        Important links to photos and previous experience logs on such as weddings, 
+                        portrait shoot and contracted events
+                    </p>
+                    <div class="picture">
+                        <img src="./images/PortfolioLanding.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box6">
+                <div class="Concept5">
+                    <h2 class="sub-heading">Canada Life Form Design</h2>
+                    <p class="paragraph">
+                        As part of Canada Life’s new rebranding move, insurance advisors and plan 
+                        sponsors are able to have their questions quickly addressed. 
+                        A new form UI was required and would live on the contact us section of 
+                        the Canada Life website.
+                    </p>
+                    <div class="picture1">
+                        <img src="./images/CanadaLifeForm.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper6">
+            <div class="line">
+                <hr/>
+            </div>
+            <div class="foot1">
+                <p class="tag2">
+                    Thanks for stopping by,
+                </p>
+                <p class="tag2">
+                    Now tell me about yourself.
+                </p> 
+            </div>
+            <div class="foot2">
+                <p class="links">
+                    <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                    <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+                </p>
+            </div>
+            <div class="foot3">
+                <div class="links">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                    <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+                </div>
+            </div>
+            <div class="foot4">
+                <p class="tag3">
+                    © Edmund Lee 2021
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+
