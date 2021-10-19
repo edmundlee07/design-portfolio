@@ -1,0 +1,357 @@
+p {
+    color: #f1f1fc;
+}
+
+.myButton {
+    background-color: 24262c;
+    border-radius: 28px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Karla;
+    font-size: 18px;
+    padding: 12px 42px;
+    text-decoration: none;
+    transition: 0.4s ease-out;
+    transition-delay: 0.2s;
+}
+
+.myButton:hover {
+    background-color: #ffcab1;
+    transition: 0.4s ease-out;
+    color: #0a3321;
+}
+
+.myButton:active {
+    position: relative;
+}
+
+.wrapperHome {
+    display: grid;
+    grid-template-columns: 1.2fr 450px 450px 450px 1.2fr;
+    grid-gap: 20px;
+}
+
+
+/*About Me*/
+
+.boxHome1 {
+    padding-top: 5%;
+    grid-column: 2/5;
+    grid-row: 1/5;
+}
+
+.cat1 p {
+    font-family: IBM Plex;
+    font-size: 4rem;
+    border: 0;
+    color: #f1f1fc;
+    padding-bottom: 10px;
+    padding-top: 10%;
+    border-bottom: 0px;
+    margin: 0;
+}
+
+.aboutMe p {
+    font-family: Karla;
+    font-size: 1.4rem;
+    color: #f1f1fc;
+    padding-right: 35%;
+    bottom: 0;
+    margin: 0;
+    padding-top: 20px;
+    line-height: 1.4;
+}
+
+.aboutMe a{
+    text-decoration: none;
+}
+
+.button {
+    padding-top: 4%;
+    padding-bottom: 8%;
+}
+
+
+/*Projects*/
+
+.picture img {
+    object-fit: fill;
+    width: 100%;
+    max-height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.wrapperHome .text-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    color: white;
+    opacity: 0;
+}
+
+.text-box h2 {
+    font-family: Karla;
+    font-size: 3rem;
+    font-weight: 450;
+    padding-left: 7%;
+    margin: 0;
+}
+
+.text-box h4 {
+    font-family: Karla;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+}
+
+.wrapperHome .text-box:hover {
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boxHome4:hover img,
+.boxHome5:hover img,
+.boxHome6:hover img,
+.boxHome7:hover img,
+.boxHome8:hover img,
+.boxHome9:hover img,
+.boxHome101:hover img,
+.boxHome10:hover video {
+    opacity: 0.3;
+}
+
+.boxHome4 {
+    grid-column: 2/4;
+    grid-row: 5/7;
+    position: relative;
+}
+
+.boxHome5 {
+    grid-column: 4/5;
+    grid-row: 5/7;
+    position: relative;
+}
+
+.boxHome6 {
+    grid-column: 2/3;
+    grid-row: 7/9;
+    position: relative;
+}
+
+.boxHome7 {
+    grid-column: 3/5;
+    grid-row: 7/9;
+    position: relative;
+}
+
+.boxHome8 {
+    grid-column: 2/4;
+    grid-row: 9/11;
+    position: relative;
+}
+
+.boxHome9 {
+    grid-column: 4/5;
+    grid-row: 9/11;
+    position: relative;
+}
+
+.boxHome101 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+    position: relative;
+}
+
+.boxHome10 {
+    grid-column: 3/5;
+    grid-row: 11/13;
+    position: relative;
+}
+
+/*Intro Motion*/
+#motion1{
+    -webkit-animation: 2s ease 0s normal forwards 1 fadein1;
+    animation: 2s ease 0s normal forwards 1 fadein1;
+    opacity: 0;
+}
+
+@keyframes fadein1{
+    0% { opacity:0;}
+    33% { opacity:0; transform: translateY(50px);}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein1{
+    0% { opacity:0;}
+    33% {  opacity:0; transform: translateY(50px);}
+    100% { opacity:1;}
+}
+
+#motion2{
+    -webkit-animation: 2s ease 1.50s normal forwards 1 fadein2;
+    animation: 2s ease 1.50s normal forwards 1 fadein2;
+    opacity: 0;
+}
+
+@keyframes fadein2{
+    0% { opacity:0;}
+    33% { opacity:0; transform: translatey(50px);}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein2{
+    0% { opacity:0;}
+    33% {  opacity:0; transform: translatey(50px);}
+    100% { opacity:1;}
+}
+
+#motion3{
+    -webkit-animation: 2s ease 3s normal forwards 1 fadein3;
+    animation: 2s ease 3s normal forwards 1 fadein3;
+    opacity: 0;
+}
+
+@keyframes fadein3{
+    0% { opacity:0;}
+    66% { opacity:0;}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein3{
+    0% { opacity:0;}
+    66% {  opacity:0;}
+    100% { opacity:1;}
+}
+
+#motion4{
+    -webkit-animation: 2s ease 4s normal forwards 1 fadein4;
+    animation: 2s ease 4s normal forwards 1 fadein4;
+    opacity: 0;
+}
+
+@keyframes fadein4{
+    0% { opacity:0;}
+    66% { opacity:0;}
+    100% { opacity:1;}
+}
+
+@-webkit-keyframes fadein4{
+    0% { opacity:0;}
+    66% {  opacity:0;}
+    100% { opacity:1;}
+}
+
+/*Footer Line*/
+.line{
+    grid-column: 1/6;
+    grid-row: 13/17;
+    padding-top: 15%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*Footer*/
+.foot1{
+    grid-column: 1/3;
+    grid-row: 17/19;
+    padding-top: 10%;
+    padding-left: 25%;
+    padding-bottom: 5%;
+}
+
+.tag2{
+    font-family: Manrope;
+    line-height: 1.5em;
+    color: #f1f1fc; 
+    font-size: 3em;
+    font-weight: 400;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+.foot2{
+    grid-column: 3/5;
+    grid-row: 17/18;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.links a{
+    font-family: Manrope;
+    text-decoration: none;
+    line-height: 1.3em;
+    color: #f1f1fc; 
+    font-size: 2em;
+    font-weight: 400;
+    padding-right: 10%;
+    margin: 0;
+}
+
+.links a:hover{
+    color: #A2BBA5;
+    transition: 0.5s ease;
+    transition-delay: .5s;
+    transition: 0.5s ease-out;
+}
+
+.foot3{
+    grid-column: 3/5;
+    grid-row: 18/21;
+    padding-left: 20%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.tag3{
+    font-family: Manrope;
+    line-height: 0.8em;
+    color: #acacac; 
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-top: 56px;
+}
+
+.foot4{
+    grid-column: 1/3;
+    grid-row: 19/23;
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-bottom: 15%;
+}

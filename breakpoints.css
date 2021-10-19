@@ -1,0 +1,451 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .wrapperHome {
+        display: grid;
+        grid-template-columns: 1.2fr 350px 350px 350px 1.2fr;
+        grid-gap: 20px;
+    }
+    /*hover overlay*/
+    .text-box h2 {
+        font-family: Karla;
+        font-size: 2.5rem;
+        font-weight: 450;
+        padding-left: 7%;
+        margin: 0;
+    }
+    .text-box h4 {
+        font-family: Karla;
+        font-size: 1rem;
+        font-weight: 200;
+        padding-left: 7%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+    /*Hero*/
+    .cat1 p {
+        font-size: 4rem;
+        padding-bottom: 10px;
+        padding-top: 10%;
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .aboutMe p {
+        font-size: 1.4rem;
+        padding-right: 35%;
+        padding-top: 24px;
+        line-height: 1.4;
+    }
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .wrapperHome {
+        grid-template-columns: 1.2fr 250px 250px 250px 1.2fr;
+        grid-gap: 20px;
+    }
+    /*hover overlay*/
+    .text-box h2 {
+        font-family: Karla;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-left: 7%;
+        margin: 0;
+    }
+    .text-box h4 {
+        font-family: Karla;
+        font-size: 1rem;
+        font-weight: 200;
+        padding-left: 7%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+    /*Hero*/
+    .cat1 p {
+        font-size: 4rem;
+        padding-bottom: 10px;
+        padding-top: 10%;
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .aboutMe p {
+        font-size: 1.4rem;
+        padding-right: 35%;
+        padding-top: 24px;
+        line-height: 1.4;
+    }
+    /*Button*/
+    .myButton {
+        font-family: Karla;
+        font-size: 18px;
+        padding: 10px 38px;
+    }
+
+    /*Footer*/
+    .tag2{
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+    .links a{
+        font-size: 1.5em;
+    }
+    
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapperHome {
+        grid-template-columns: 1fr 200px 200px 200px 1fr;
+        grid-gap: 10px;
+    }
+    /*menu inner*/
+    .top-nav .overlay {
+        margin-top: 9%;
+    }
+    .top-nav .overlay a {
+        font-size: 2.5rem;
+    }
+    /*hover overlay*/
+    .text-box h2 {
+        font-family: Karla;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-left: 7%;
+        margin: 0;
+    }
+    .text-box h4 {
+        font-family: Karla;
+        font-size: 0.8rem;
+        font-weight: 200;
+        padding-left: 7%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+    /*Hero*/
+    .cat1 p {
+        font-size: 4rem;
+        padding-bottom: 10px;
+        padding-top: 10%;
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .aboutMe p {
+        font-size: 1.2rem;
+        padding-right: 25%;
+        padding-top: 24px;
+        line-height: 1.6;
+    }
+    /*Button*/
+    .myButton {
+        font-family: Karla;
+        font-size: 16px;
+        padding: 8px 32px;
+    }
+
+    /*Footer*/
+    .tag2{
+        line-height: 1.5em;
+        font-size: 2em;
+    }
+    .links a{
+        font-size: 1.5em;
+        padding-right: 6%;
+    }
+
+    .foot2{
+        grid-column: 3/6;
+    }
+
+    .foot3{
+        grid-column: 3/6;
+    }
+        
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .wrapperHome {
+        grid-template-columns: 0.1fr 1.5fr 1.5fr 1.5fr 0.1fr;
+        grid-gap: 14px;
+    }
+    .boxHome4 {
+        grid-column: 2/5;
+        grid-row: 7/9;
+        position: relative;
+    }
+    .boxHome5 {
+        grid-column: 2/5;
+        grid-row: 9/11;
+        position: relative;
+    }
+    .boxHome6 {
+        grid-column: 2/5;
+        grid-row: 11/13;
+        position: relative;
+    }
+    .boxHome7 {
+        grid-column: 2/5;
+        grid-row: 13/15;
+        position: relative;
+    }
+    .boxHome8 {
+        grid-column: 2/5;
+        grid-row: 15/17;
+        position: relative;
+    }
+    .boxHome9 {
+        grid-column: 2/5;
+        grid-row: 17/19;
+        position: relative;
+    }
+    .boxHome101 {
+        grid-column: 2/5;
+        grid-row: 19/21;
+        position: relative;
+    }
+    .boxHome10 {
+        grid-column: 2/5;
+        grid-row: 21/23;
+        position: relative;
+    }
+    .line{
+        grid-column: 1/6;
+        grid-row: 23/25;
+        padding-top: 10%;
+    }
+
+    /*Title and menu*/
+    .navbar h1 {
+        margin: 25px 0 0 25px;
+    }
+    .container {
+        padding: 0 25px 0 0;
+    }
+    /*menu inner*/
+    .top-nav .overlay {
+        margin-top: 13%;
+    }
+    .top-nav .overlay a {
+        font-size: 2.3rem;
+    }
+    /*hover overlay*/
+    .text-box h2 {
+        font-family: Karla;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-left: 7%;
+        margin: 0;
+    }
+    .text-box h4 {
+        font-family: Karla;
+        font-size: 1.2rem;
+        font-weight: 200;
+        padding-left: 7%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+    /*Hero*/
+    .cat1 p {
+        font-size: 3.4rem;
+        padding-bottom: 10px;
+        padding-top: 10%;
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .aboutMe p {
+        font-size: 1.2rem;
+        padding-right: 25%;
+        padding-top: 24px;
+        line-height: 1.6;
+    }
+    /*Button*/
+    .myButton {
+        font-family: Karla;
+        font-size: 14px;
+        padding: 10px 32px;
+    }
+
+    .foot1{
+        grid-column: 2/5;
+        grid-row: 25/26;
+        padding-left: 0;
+    }
+    .foot2{
+        grid-column: 2/5;
+        grid-row: 26/27;
+        padding-left: 0;
+    }
+    .foot3{
+        grid-column: 2/5;
+        grid-row: 27/28;
+        padding-left: 0;
+    }
+    .foot4{
+        grid-column: 2/5;
+        grid-row: 28/29;
+        padding-left: 0;
+    }
+
+    .links a{
+        font-size: 1.5em;
+        padding-right: 5%;
+    }
+    
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrapperHome {
+        grid-template-columns: 0.05fr 1.5fr 1.5fr 1.5fr 0.05fr;
+        grid-gap: 8px;
+    }
+    .boxHome4 {
+        grid-column: 2/5;
+        grid-row: 7/9;
+        position: relative;
+    }
+    .boxHome5 {
+        grid-column: 2/5;
+        grid-row: 9/11;
+        position: relative;
+    }
+    .boxHome6 {
+        grid-column: 2/5;
+        grid-row: 11/13;
+        position: relative;
+    }
+    .boxHome7 {
+        grid-column: 2/5;
+        grid-row: 13/15;
+        position: relative;
+    }
+    .boxHome8 {
+        grid-column: 2/5;
+        grid-row: 15/17;
+        position: relative;
+    }
+    .boxHome9 {
+        grid-column: 2/5;
+        grid-row: 17/19;
+        position: relative;
+    }
+    .boxHome101 {
+        grid-column: 2/5;
+        grid-row: 19/21;
+        position: relative;
+    }
+    .boxHome10 {
+        grid-column: 2/5;
+        grid-row: 21/23;
+        position: relative;
+    }
+    .line{
+        grid-column: 1/6;
+        grid-row: 23/25;
+        padding-top: 10%;
+    }
+
+    .navbar h1 {
+        margin: 25px 0 0 10px;
+    }
+    .container {
+        padding: 0 10px 0 0;
+    }
+    /*menu inner*/
+    .top-nav .overlay {
+        margin-top: 30%;
+    }
+    .top-nav .overlay a {
+        font-size: 2rem;
+    }
+    /*hover overlay*/
+    .text-box h2 {
+        font-family: Karla;
+        font-size: 2.2rem;
+        font-weight: 400;
+        padding-left: 7%;
+        margin: 0;
+    }
+    .text-box h4 {
+        font-family: Karla;
+        font-size: 1.2rem;
+        font-weight: 200;
+        padding-left: 7%;
+        padding-bottom: 5%;
+        margin-top: 4%;
+    }
+    /*Hero*/
+    .cat1 p {
+        font-size: 2.8rem;
+        padding-bottom: 10px;
+        padding-top: 8%;
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .aboutMe p {
+        font-size: 1.2rem;
+        padding-right: 3%;
+        padding-top: 22px;
+        line-height: 1.6;
+    }
+    /*Button*/
+    .myButton {
+        font-family: Karla;
+        font-size: 14px;
+        padding: 10px 32px;
+    }
+    .button {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    /*Footer*/
+    .foot1{
+        grid-column: 2/5;
+        grid-row: 25/26;
+        padding-left: 0;
+    }
+    .foot2{
+        grid-column: 2/5;
+        grid-row: 26/27;
+        padding-left: 0;
+    }
+    .foot3{
+        grid-column: 2/5;
+        grid-row: 27/28;
+        padding-left: 0;
+    }
+    .foot4{
+        grid-column: 2/5;
+        grid-row: 28/29;
+        padding-left: 0;
+    }
+
+    .links a{
+        font-size: 1.4em;
+        padding-right: 3%;
+    }
+}

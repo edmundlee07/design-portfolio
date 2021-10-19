@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edmund Lee - UX Designer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleIndex.css">
+    <link rel="stylesheet" href="./breakpoints.css">
+    <script src="./app.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel='shortcut icon' type='image/ico' href="./favicon.ico">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+
+<body>
+    <script>
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready(function() {
+            jQuery('body').fadeIn();
+
+            jQuery('a').on('click', function(event) {
+                var thetarget = this.getAttribute('target')
+                if (thetarget = "#") {
+                    break;
+                }
+                if (thetarget != "_blank") {
+                    var thehref = this.getAttribute('href')
+                    event.preventDefault();
+                    jQuery('body').fadeOut(function() {
+                        //alert(thehref)
+                        window.location = thehref
+                    });
+                }
+            });
+        });
+        setTimeout(function() {
+            jQuery('body').fadeIn();
+        }, 1000)
+    </script>
+    <nav class="navbar" id="motion4">
+        <h1>
+            <a href="./index.html">Edmund / Lee</a>
+        </h1>
+    </nav>
+
+    <div class="container" id="motion4" onclick="openTopNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div id="top-nav" class="top-nav">
+        <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+        <div class="overlay" id="motion4">
+            <a href="./index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
+            <a href="./About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
+            <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+            <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
+        </div>
+    </div>
+
+    <div class="wrapperHome" id="container1">
+        <div class="boxHome1">
+            <div class="cat1">
+                <p id="motion1">Hi I'm Edmund,</p>
+            </div>
+            <div class="aboutMe" >
+                <p id="motion2">
+                    A UX designer crafting experiences from a systems design perspective,
+                    I value ethics, modularity and data when doing design.
+                </p>
+                <p id="motion2">
+                    I've interned at
+                    <a href="https://www.ea.com/en-ca" target="_blank">
+                        <span style="color:#ffcab1">EA</span>
+                    </a>
+                    ,
+                    <a href="https://www.canadalife.com/" target="_blank">
+                        <span style="color:#ffcab1">Canada Life</span>
+                    </a>
+                    and
+                    <a href="https://www.heyauby.com/" target="_blank">
+                        <span style="color:#ffcab1">Auby</span>
+                    </a>
+                    , currently on the hunt for a full time design position for 2021.
+                </p>
+                <div class="button" id="motion3">
+                    <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" class="myButton">Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxHome4" id="motion3">
+            <div class="picture">
+                <a href="./Project/HomeSimpleDesign/HomeSimple.html">
+                    <img src="./Project/Cover/homesimple_cover.jpg" alt="">
+                    <div class="text-box">
+                        <h2>Home Simple</h2>
+                        <h4>Property Recommendations</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome5" id="motion3">
+            <div class="picture">
+                <a href="./Project/AubyDesign/Auby.html">
+                    <img src="./Project/Cover/auby_cover.jpg" loading="lazy" alt="">
+                    <div class="text-box">
+                        <h2>Auby</h2>
+                        <h4>Tailored Podcast Recommendations</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome6" id="motion3">
+            <div class="picture">
+                <a href="./Project/ProvincialDesign/provincial_design.html">
+                    <img src="./Project/Cover/provincial_cover.jpg" alt="">
+                    <div class="text-box">
+                        <h2>Great-West Life</h2>
+                        <h4>Healthcare Coverage Information</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome7" id="motion3">
+            <div class="picture">
+                <a href="./Project/EADesign/EA.html">
+                    <img src="./Project/Cover/ea_cover.jpg" loading="lazy" alt="">
+                    <div class="text-box">
+                        <h2>Electronic Arts</h2>
+                        <h4>EA Sports UFC Mobile 2</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome8" id="motion3">
+            <div class="video">
+                <a href="./Project/MotionDesign/MotionDesign.html">
+                    <video muted looped autoplay>
+                        <source src="./Project/Cover/motion_cover.mp4" type="video/mp4">
+                    </video>
+                    <div class="text-box">
+                        <h2>Motion Playground</h2>
+                        <h4>Concept Interaction Work</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome9" id="motion3">
+            <div class="picture">
+                <a href="./Project/UWPortalDesign/UWPortal.html">
+                    <img src="./Project/Cover/portal_cover.jpg" alt="">
+                    <div class="text-box">
+                        <h2>UW Portal</h2>
+                        <h4>Service Design Challenge</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="boxHome101" id="motion3">
+            <div class="picture">
+                <a href="./Project/LampChallenge/LampChallenge.html">
+                    <img src="./Project/Cover/lamp_cover.jpg" alt="">
+                    <div class="text-box">
+                        <h2>Shōji</h2>
+                        <h4>Japanese Lamp Architecture</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="boxHome10" id="motion3">
+            <div class="picture">
+                <a href="./Project/GroupnetDesign/Groupnet.html">
+                    <img src="./Project/Cover/groupnet_cover.jpg" alt="">
+                    <div class="text-box">
+                        <h2>GroupNet</h2>
+                        <h4>Redesign of an Insurance Registration</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="line">
+            <hr/>
+        </div>
+        <div class="foot1">
+            <p class="tag2">
+                Thanks for stopping by,
+            </p>
+            <p class="tag2">
+                Now tell me about yourself.
+            </p> 
+        </div>
+        <div class="foot2">
+            <p class="links">
+                <a href = "mailto:ejylee@uwaterloo.ca?subject = Feedback&body = Message" target="_blank">Email</a> 
+                <a href="https://www.linkedin.com/in/edmund-lee/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/junspacee/" target="_blank">Instagram</a>
+            </p>
+        </div>
+        <div class="foot3">
+            <div class="links">
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
+            </div>
+        </div>
+        <div class="foot4">
+            <p class="tag3">
+                © Edmund Lee 2021
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
