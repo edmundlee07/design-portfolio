@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+html,
+body {
+    /*font-family: "Arial", "Helvetica", sans-serif;*/
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Karla', sans-serif;
+    /*background-color: #0a3321;*/
+    background-color: #070716;
+}
+
+.copyright {
+    color: #8994ac;
+    font: 8px;
+}
+
+.navbar {
+    background: transparent;
+    height: 100px;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    text-align: left;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+    font-size: 2rem;
+    /*transition properties apply on mouseout*/
+    transition: 0.2s ease-out;
+    transition-delay: 0.1s;
+    font-family: Karla;
+    color: #f1f1fc;
+    font-weight: 300;
+}
+
+.navbar h1 {
+    margin: 25px 0 0 50px;
+    list-style: none;
+}
+
+.navbar a:hover {
+    /*transition properties apply on hover over Home tag*/
+    transition: 0.2s ease-out;
+    /*color: #A2BBA5;*/
+    color: #ffcab1;
+}
+
+.top-nav {
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #161618;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s ease-out;
+    transition-delay: 0.2s;
+    text-align: center;
+    z-index: 100;
+}
+
+
+/*controls the x*/
+
+.top-nav a {
+    padding: 45px 0 0 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 56px;
+    display: grid;
+    grid-column: auto;
+    grid-row: auto;
+    transition: 0.2s ease-out;
+    margin: 0;
+}
+
+.top-nav a:hover {
+    /*color: #A2BBA5;*/
+    color: #ffcab1;
+}
+
+.top-nav .overlay {
+    margin-top: 7%;
+    text-align: center;
+    display: inline-block;
+}
+
+.top-nav .overlay a {
+    font-family: Karla;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.top-nav .btn-close {
+    position: absolute;
+    top: -15px;
+    font-size: 56px;
+    margin-left: 900px;
+    right: 55px;
+    font-family: Karla;
+    font-weight: 200;
+}
+
+.container {
+    display: block;
+    cursor: pointer;
+    padding: 0 50px 0 0;
+    float: right;
+    margin-top: -50px;
+}
+
+
+/* Styling for menu bar*/
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #f1f1fc;
+    margin: 5px 0 0 0;
+    transition: 0.3s ease-out;
+    transition-delay: 0.3s;
+}
+
+.bar1:hover,
+.bar2:hover,
+.bar3:hover {
+    /*background-color: #A2BBA5;*/
+    background-color: #ffcab1;
+}
+
+.blurb {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.blurb2 {
+    text-align: center;
+    margin-bottom: 150px;
+}
