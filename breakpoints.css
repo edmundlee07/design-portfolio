@@ -35,7 +35,7 @@
     }
     .aboutMe p {
         font-size: 1.4rem;
-        padding-right: 35%;
+        padding-right: 40%;
         padding-top: 24px;
         line-height: 1.4;
     }
@@ -318,6 +318,10 @@
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
     .wrapperHome {
         grid-template-columns: 0.05fr 1.5fr 1.5fr 1.5fr 0.05fr;
         grid-gap: 8px;
