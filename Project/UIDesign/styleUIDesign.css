@@ -254,8 +254,8 @@ hr {
 
 /*Intro Motion*/
 #motion1{
-    -webkit-animation: 2s ease 0s normal forwards 1 fadein1;
-    animation: 2s ease 0s normal forwards 1 fadein1;
+    -webkit-animation: 1.2s ease 0s normal forwards 1 fadein1;
+    animation: 1.2s ease 0s normal forwards 1 fadein1;
     opacity: 0;
 }
 
@@ -272,8 +272,8 @@ hr {
 }
 
 #motion2{
-    -webkit-animation: 3s ease 1s normal forwards 1 fadein2;
-    animation: 3s ease 1s normal forwards 1 fadein2;
+    -webkit-animation: 1.8s ease 0.6s normal forwards 1 fadein2;
+    animation: 1.8s ease 0.6s normal forwards 1 fadein2;
     opacity: 0;
 }
 

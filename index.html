@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Edmund Lee — UX designer crafting experiences from a systems design perspective. Case studies in fintech, healthcare, gaming, and more.">
     <title>Edmund Lee - UX Designer</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./style.css">
@@ -33,7 +33,6 @@
                     var thehref = this.getAttribute('href')
                     event.preventDefault();
                     jQuery('body').fadeOut(function() {
-                        //alert(thehref)
                         window.location = thehref
                     });
                 }
@@ -56,7 +55,7 @@
     </div>
 
     <div id="top-nav" class="top-nav">
-        <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+        <a href="#" class="btn-close" onclick="closeTopNav()" aria-label="Close menu">&times;</a>
         <div class="overlay" id="motion4">
             <a href="./index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
             <a href="./About/about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
@@ -72,13 +71,13 @@
             </div>
             <div class="aboutMe" >
                 <p id="motion2">
-                    A UX designer crafting experiences from a systems design perspective.
-                    I value ethics, modularity and data when doing design.
+                    Technical designer, who codes every now and then.<br>
+                    Crafting cool stuff from a systems perspective
                 </p>
                 <p id="motion2">
                     Currently @
-                    <a href="https://www.ea.com/en-ca/sports" target="_blank">
-                        <span style="color:#ffcab1">EA Sports</span>
+                    <a href="https://www.questrade.com/" target="_blank">
+                        <span style="color:#ffcab1">Questrade</span>
                     </a>
                 </p>
                 <!--
@@ -89,10 +88,34 @@
             </div>
         </div>
 
+        <div class="boxHome2" id="motion3">
+            <div class="picture">
+                <a href="./Project/QuestradeDesign/Questrade.html">
+                    <img src="./Project/Cover/homesimple_cover.jpg" loading="lazy" alt="Questrade Pro — Open Beta">
+                    <div class="text-box">
+                        <h2>Questrade Pro</h2>
+                        <h4>Open Beta</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="boxHome3" id="motion3">
+            <div class="picture">
+                <a href="#">
+                    <img src="./Project/Cover/auby_cover.jpg" loading="lazy" alt="Project — Coming Soon">
+                    <div class="text-box">
+                        <h2>Project Name</h2>
+                        <h4>Coming Soon</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
         <div class="boxHome4" id="motion3">
             <div class="picture">
                 <a href="./Project/HomeSimpleDesign/HomeSimple.html">
-                    <img src="./Project/Cover/homesimple_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/homesimple_cover.jpg" loading="lazy" alt="Home Simple — Property Recommendations">
                     <div class="text-box">
                         <h2>Home Simple</h2>
                         <h4>Property Recommendations</h4>
@@ -104,7 +127,7 @@
         <div class="boxHome5" id="motion3">
             <div class="picture">
                 <a href="./Project/AubyDesign/Auby.html">
-                    <img src="./Project/Cover/auby_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/auby_cover.jpg" loading="lazy" alt="Auby — Tailored Podcast Recommendations">
                     <div class="text-box">
                         <h2>Auby</h2>
                         <h4>Tailored Podcast Recommendations</h4>
@@ -116,7 +139,7 @@
         <div class="boxHome6" id="motion3">
             <div class="picture">
                 <a href="./Project/ProvincialDesign/provincial_design.html">
-                    <img src="./Project/Cover/provincial_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/provincial_cover.jpg" loading="lazy" alt="Great-West Life — Healthcare Coverage Information">
                     <div class="text-box">
                         <h2>Great-West Life</h2>
                         <h4>Healthcare Coverage Information</h4>
@@ -128,7 +151,7 @@
         <div class="boxHome7" id="motion3">
             <div class="picture">
                 <a href="./Project/EADesign/EA.html">
-                    <img src="./Project/Cover/ea_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/ea_cover.jpg" loading="lazy" alt="Electronic Arts — EA Sports UFC Mobile 2">
                     <div class="text-box">
                         <h2>Electronic Arts</h2>
                         <h4>EA Sports UFC Mobile 2</h4>
@@ -154,7 +177,7 @@
         <div class="boxHome9" id="motion3">
             <div class="picture">
                 <a href="./Project/UWPortalDesign/UWPortal.html">
-                    <img src="./Project/Cover/portal_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/portal_cover.jpg" loading="lazy" alt="UW Portal — Service Design Challenge">
                     <div class="text-box">
                         <h2>UW Portal</h2>
                         <h4>Service Design Challenge</h4>
@@ -167,7 +190,7 @@
         <div class="boxHome101" id="motion3">
             <div class="picture">
                 <a href="./Project/LampChallenge/LampChallenge.html">
-                    <img src="./Project/Cover/lamp_cover.jpg" loading="lazy" alt="">
+                    <img src="./Project/Cover/lamp_cover.jpg" loading="lazy" alt="Shōji — Japanese Lamp Architecture">
                     <div class="text-box">
                         <h2>Shōji</h2>
                         <h4>Japanese Lamp Architecture</h4>
@@ -178,11 +201,11 @@
         
         <div class="boxHome10" id="motion3">
             <div class="picture">
-                <a href="./Project/GroupnetDesign/Groupnet.html">
-                    <img src="./Project/Cover/groupnet_cover.jpg" loading="lazy" alt="">
+                <a href="./Project/UIDesign/UIDesign.html">
+                    <img src="./Project/Cover/ui_cover.jpg" loading="lazy" alt="UI Collection — Professional and Concept Work">
                     <div class="text-box">
-                        <h2>GroupNet</h2>
-                        <h4>Redesign of an Insurance Registration</h4>
+                        <h2>UI Collection</h2>
+                        <h4>Professional and Concept Work</h4>
                     </div>
                 </a>
             </div>
@@ -214,7 +237,7 @@
         </div>
         <div class="foot4">
             <p class="tag3">
-                © Edmund Lee 2021
+                Edmund Lee 2026
             </p>
         </div>
     </div>

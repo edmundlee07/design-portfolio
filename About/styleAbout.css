@@ -132,8 +132,8 @@ hr {
 
 /*Intro Motion*/
 #motion1{
-    -webkit-animation: 2s ease 0s normal forwards 1 fadein1;
-    animation: 2s ease 0s normal forwards 1 fadein1;
+    -webkit-animation: 1.2s ease 0s normal forwards 1 fadein1;
+    animation: 1.2s ease 0s normal forwards 1 fadein1;
     opacity: 0;
 }
 
@@ -150,8 +150,8 @@ hr {
 }
 
 #motion2{
-    -webkit-animation: 2s ease 1.50s normal forwards 1 fadein2;
-    animation: 2s ease 1.50s normal forwards 1 fadein2;
+    -webkit-animation: 1.2s ease 0.9s normal forwards 1 fadein2;
+    animation: 1.2s ease 0.9s normal forwards 1 fadein2;
     opacity: 0;
 }
 
@@ -168,8 +168,8 @@ hr {
 }
 
 #motion3{
-    -webkit-animation: 2s ease 3s normal forwards 1 fadein3;
-    animation: 2s ease 3s normal forwards 1 fadein3;
+    -webkit-animation: 1.2s ease 1.8s normal forwards 1 fadein3;
+    animation: 1.2s ease 1.8s normal forwards 1 fadein3;
     opacity: 0;
 }
 

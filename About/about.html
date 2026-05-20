@@ -6,7 +6,7 @@
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="About Edmund Lee — UX designer with a systems design and engineering background.">
     <title>Edmund Lee</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./styleAbout.css">
@@ -21,58 +21,6 @@
 </head>
 
 <body>
-    <script>
-        var lastPosition = -100;
-
-        $(document).ready(function() {
-            $('.wrapper').height($('.smooth').height());
-
-            $(window).resize(function() {
-                $('.wrapper').height($('.smooth').height());
-            });
-
-            $('.flat-button').click(function() {
-                $(".smooth").clearQueue().css({
-                    transform: 'translate3d(0px, -' + $('.toggle').offset().top + 'px, 0px)'
-                });
-                $(window).scrollTop($('.toggle').offset().top);
-                return false;
-            });
-        });
-
-        var scroll = window.requestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.msRequestAnimationFrame ||
-            window.oRequestAnimationFrame ||
-            // IE Fallback, you can even fallback to onscroll
-            function(callback) {
-                window.setTimeout(callback, 1000 / 60)
-            };
-
-        function loop() {
-
-            // Avoid calculations if not needed
-            if (lastPosition == window.pageYOffset) {
-                scroll(loop);
-                return false;
-            } else lastPosition = window.pageYOffset;
-        
-            var transform = 'translate3d(0px, -' + lastPosition + 'px, 0px)';
-            var smoothScoll = $(".smooth")[0];
-        
-            smoothScoll.style.webkitTransform = transform;
-            smoothScoll.style.mozTransform = transform;
-            smoothScoll.style.transform = transform;
-            
-        
-            scroll(loop)
-        }
-
-        // Call the loop for the first time
-        loop();
-
-    </script>
     <nav class="navbar" id="motion3">
         <h1>
             <a href="../index.html">Edmund / Lee</a>
@@ -86,11 +34,11 @@
     </div>
 
     <div id="top-nav" class="top-nav">
-        <a href="#" class="btn-close" onclick="closeTopNav()">&times;</a>
+        <a href="#" class="btn-close" onclick="closeTopNav()" aria-label="Close menu">&times;</a>
         <div class="overlay" id="motion3">
             <a href="../index.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">Case Studies</a>
             <a href="./about.html" onmouseover="portfolioOver()" onmouseout="portfolioOut()">About</a>
-            <a href="https://drive.google.com/file/d/1YEjO1WRlKlPYeV1CrnprDB4xo-H85Bei/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+            <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
             <a href="https://www.instagram.com/junspacee/" target="_blank" onmouseover="photoAlbumOver()" onmouseout="photoAlbumOut()">Photo Album</a>
         </div>
     </div>
@@ -115,7 +63,7 @@
 
         <div class="boxAbout3">
             <div class="picture1" id="motion2">
-                <img src="./images/edmund.jpg" alt="">
+                <img src="./images/edmund.jpg" alt="Edmund Lee">
             </div>
         </div>
         <div class="line">
@@ -138,13 +86,13 @@
         </div>
         <div class="foot3">
             <div class="links">
-                <a href="https://drive.google.com/file/d/1YEjO1WRlKlPYeV1CrnprDB4xo-H85Bei/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
+                <a href="https://drive.google.com/file/d/1yQY2NmdztBe_V67c2HuhMQT8uu2QWW2b/view?usp=sharing" target="_blank" onmouseover="resumeOver()" onmouseout="resumeOut()">Resume</a>
                 <a href="https://dribbble.com/edmund-lee" target="_blank">Dribble</a>
             </div>
         </div>
         <div class="foot4">
             <p class="tag3">
-                © Edmund Lee 2021
+                Edmund Lee 2026
             </p>
         </div>
     </div>
