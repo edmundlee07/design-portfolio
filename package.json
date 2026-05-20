@@ -1,0 +1,10 @@
+{
+  "name": "design-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=8000 --no-browser --watch=."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

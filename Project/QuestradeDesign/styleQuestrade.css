@@ -9,44 +9,280 @@ body {
     line-height: 1.8em;
 }
 
+/* =============================================
+   Questrade Design System — Typography & Spacing
+   ============================================= */
+:root {
+    --grid-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
+    --grid-gap: 0.7em;
+    --content-col: 2 / 6;
+
+    --section-y: 3.5rem;
+    --feature-gap: 4rem;
+    --block-gap: 2.5rem;
+    --text-gap: 1.25rem;
+    --media-gap: 2rem;
+    --caption-gap: 0.75rem;
+
+    --color-label: #999999;
+    --color-title: #222222;
+    --color-body: #222222;
+    --color-caption: #000000;
+    --color-meta: #c9c4c4;
+}
+
 /*Global Properties for all*/
-.heading {
-    padding-top: 5%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #999999;
-    line-height: 20px;
+.section-label {
     font-family: Karla;
+    font-size: 20px;
     font-weight: 600;
+    color: var(--color-label);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+}
+
+.heading {
+    font-family: Karla;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 400;
+    color: var(--color-title);
+    margin: 0 0 var(--text-gap);
+    padding: 0;
 }
 
 .sub-heading {
-    font-size: 30px;
-    line-height: 36px;
-    color: #222222;
     font-family: Karla;
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--color-title);
+    margin: var(--block-gap) 0 var(--text-gap);
+    padding: 0;
+}
+
+.sub-header {
+    font-family: Karla;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--color-title);
+    margin: 0 0 0.75rem;
+    padding: 0;
+}
+
+.heading + .sub-heading,
+.section-label + .sub-heading {
+    margin-top: var(--text-gap);
 }
 
 .paragraph {
     font-family: Karla;
-    line-height: 34px;
-    color: #222222;
     font-size: 22px;
+    line-height: 34px;
     font-weight: 400;
+    color: var(--color-body);
+    margin: 0 0 var(--text-gap);
+}
+
+.paragraph:last-child {
+    margin-bottom: 0;
 }
 
 .description {
     font-family: Karla;
-    text-align: center;
     font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-caption);
+    margin: var(--caption-gap) 0 var(--media-gap);
     padding: 0;
+}
+
+/* Shared content column spacing */
+.box0,
+.box4,
+.box6,
+.box7,
+.box9,
+.box11,
+.box12,
+.box13,
+.box160,
+.box22,
+.box25,
+.box34 {
+    grid-column: var(--content-col);
+    padding-top: var(--section-y);
+    padding-bottom: var(--section-y);
+}
+
+.box11,
+.box12,
+.box13 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.box9 + .box11,
+.box11 + .box12,
+.box12 + .box13 {
+    padding-top: var(--feature-gap);
+}
+
+.box13 {
+    padding-bottom: var(--section-y);
+}
+
+.highlight-grid,
+.bento-row,
+.bento-grid,
+.social-grid,
+.youtube-embed {
+    margin-top: var(--block-gap);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.highlight-grid--2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.highlight-item .sub-header {
+    margin: 0 0 0.75rem;
+}
+
+.highlight-icon {
+    display: flex;
+    margin-bottom: 0.75rem;
+    color: var(--color-title);
+}
+
+.highlight-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.highlight-item .paragraph {
+    font-size: 20px;
+    line-height: 1.6;
     margin: 0;
-    padding-top: 1%;
-    padding-bottom: 1.5rem;
-    color: #000000;
+}
+
+.bento-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.bento-grid__wide {
+    grid-column: span 2;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.social-video {
+    position: relative;
+    aspect-ratio: 9 / 16;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #122035;
+}
+
+.social-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.social-video--empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8fa3b8;
+    font-family: Karla;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.social-video--empty span {
+    padding: 1rem;
+}
+
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.feature-row__media {
+    margin-top: 0;
+}
+
+.feature-row__media video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.feature-row__copy .sub-heading {
+    margin-top: 0;
+    margin-bottom: var(--text-gap);
+}
+
+.feature-row__copy .paragraph {
+    margin-bottom: 0;
+}
+
+.media-placeholder,
+.box4 .video,
+.youtube-embed {
+    margin-top: var(--media-gap);
+}
+
+.box4 .video:first-child,
+.section-label:first-child + .heading + .paragraph + .media-placeholder,
+.heading:first-child + .media-placeholder {
+    margin-top: 0;
+}
+
+.youtube-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-color: #0a1628;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.youtube-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
 }
 
 .picture{
@@ -139,34 +375,15 @@ body {
 
 .wrapper1 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
 }
 
 /*Seeting the story*/
 .box0 {
-    grid-column: 2/6;
-    grid-row: 1/7;
-    padding-top: 15%;
-    padding-bottom: 15%;
-}
-
-.story1{
-    font-size: 2rem;
-    line-height: 36px;
-    color: #222222;
-    font-family: Karla;
-    padding-bottom: 5%;
-}
-
-.story2{
-    font-family: Karla;
-    line-height: 28px;
-    color: #222222;
-    font-size: 22px;
-    font-weight: 400;
-    padding-bottom: 5%;
+    grid-row: 1;
+    padding-top: 1.5rem;
 }
 
 .disclaimer {
@@ -183,22 +400,48 @@ body {
 
 .wrapper2 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    background-color: #F2F4FB;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
+    padding-top: var(--section-y);
+    padding-bottom: 1.5rem;
+    background-color: white;
 }
 
-/*My Role*/
-.box01{
-    grid-column: 2/5;
-    grid-row: 1/2;
+.meta-col:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1;
 }
 
-.box1 {
+.meta-col:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.meta-col:nth-child(3) {
+    grid-column: 4/5;
+    grid-row: 1;
+}
+
+.meta-col:nth-child(4) {
     grid-column: 5/6;
-    grid-row: 2/7;
+    grid-row: 1;
+}
+
+.meta-col h4 {
+    font-family: Karla;
+    color: var(--color-meta);
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    padding: 0;
+}
+
+.meta-col h2 {
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: Karla;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 0.35rem;
 }
 
 .context{
@@ -211,65 +454,36 @@ body {
     padding-right: 7%;
 }
 
-.Details h2 {
-    color: #000000;
-    font-size: 1.2rem;
-    padding-bottom: 8%;
-    font-family: Karla;
-}
-
-.Details h4 {
-    font-family: Karla;
-    color: #c9c4c4;
-    padding-top: 1rem;
-    font-size: 1rem;
-    margin: 0;
-    padding-top: 10%;
-}
-
-.Details2 h2 {
-    color: #000000;
-    font-size: 1.2rem;
-    padding: 0;
-    font-family: Karla;
-}
-
-.Details2 h4 {
-    font-family: Karla;
-    color: #c9c4c4;
-    padding-top: 1rem;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*Intro Context*/
-.box2 {
-    grid-column: 2/5;
-    grid-row: 2/7;
-    padding-bottom: 10%;
-}
-
-.box2 .paragraph {
-    padding-top: 4%;
-}
-
 
 /*Problem Definition - Wrapper*/
 
 .wrapper3 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    padding-top: 5%;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
 }
 
-/*Problem Definition*/
 .box4 {
-    grid-column: 2/6;
-    grid-row: 10/12;
-    padding-bottom: 7%;
+    grid-row: 1;
+}
+
+.box4 .video {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.box4 .video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.box4 .description,
+.box4 .highlight-grid {
+    width: 100%;
 }
 
 .current img {
@@ -284,15 +498,14 @@ body {
 
 .wrapper4 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: #e3e7f8;
-    padding-top: 2%;
 }
 
 .box6 {
-    grid-column: 2/6;
-    grid-row: 1/2;
+    grid-row: 1;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -300,16 +513,14 @@ body {
 
 .wrapper5 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: #e3e7f8;
-    padding-bottom: 4%;
 }
 
 
 .box7 {
-    grid-column: 2/6;
-    grid-row: 1/2;
+    grid-row: 1;
 }
 
 
@@ -317,16 +528,27 @@ body {
 
 .wrapper6 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
 }
 
-/*User Insights*/
 .box9 {
-    grid-column: 2/6;
-    grid-row: 3/5;
-    padding-bottom: 8%;
+    grid-row: 1;
+    padding-bottom: 0;
+}
+
+.box11 {
+    grid-row: 2;
+}
+
+.box12 {
+    grid-row: 3;
+}
+
+.box13 {
+    grid-row: 4;
+    padding-bottom: var(--section-y);
 }
 
 .testing img {
@@ -336,27 +558,8 @@ body {
     margin: 0 auto;
 }
 
-/*Developing research backed personas*/
-.box11 {
-    grid-column: 2/6;
-    grid-row: 7/9;
-}
-
 .persona img{
     padding-top: 0;
-}
-
-/*Focusing on what's important*/
-.box12 {
-    grid-column: 2/6;
-    grid-row: 9/11;
-}
-
-/*Iterations and adjustments*/
-.box13 {
-    grid-column: 2/6;
-    grid-row: 11/13;
-    padding-bottom: 8%;
 }
 
 .servicedesign img {
@@ -389,16 +592,13 @@ body {
 
 .wrapper7 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: #F2F4FB;
 }
 
-/*Design Adjustments*/
-.box160{
-    grid-column: 2/6;
-    grid-row: 1/18;
-    padding-bottom: 8%;
+.box160 {
+    grid-row: 1;
 }
 
 /*A Frustrating Onboarding*/
@@ -441,16 +641,14 @@ body {
 
 .wrapper8 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
 }
 
-/*Developing Auby's Brand Identitye*/
 .box22 {
-    grid-column: 2/6;
-    grid-row: 1/31;
-    padding-bottom: 8%;
+    grid-row: 1;
+    padding-bottom: 1.5rem;
 }
 
 /*Color and Typography*/
@@ -471,33 +669,17 @@ body {
 
 .wrapper9 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
-    background-color: #1B1A38;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
+    background-color: white;
 }
 
-
-.wrapper9 h2{
-    color: #c0c0c0;
-}
-
-.wrapper9 h3{
-    color: #F0F0F0;
-}
-
-.wrapper9 p{
-    color: #dddddd;
+.box25 {
+    grid-row: 1;
 }
 
 
 /*Feature Highlight*/
-.box25 {
-    grid-column: 2/6;
-    grid-row: 1/37;
-    padding-bottom: 8%;
-}
-
-/*Efficient Onboarding*/
 .box26 {
     grid-column: 2/4;
     grid-row: 37/39;
@@ -552,16 +734,13 @@ body {
 
 .wrapper10 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
 }
 
-/*The Result*/
 .box34 {
-    grid-column: 2/6;
-    grid-row: 1/55;
-    padding-bottom: 4%;
+    grid-row: 1;
 }
 
 /*Lesson 1*/
@@ -594,8 +773,8 @@ body {
 /*Footer*/
 .wrapper11 {
     display: grid;
-    grid-template-columns: 1.5fr 250px 250px 250px 250px 1.5fr;
-    grid-gap: 0.7em;
+    grid-template-columns: var(--grid-columns);
+    grid-gap: var(--grid-gap);
     background-color: white;
     padding-top: 0%;
     padding-bottom: 0%;
@@ -605,7 +784,7 @@ body {
 .line{
     grid-column: 1/7;
     grid-row: 1/2;
-    padding-top: 10%;
+    padding-top: 3%;
 }
 hr {
     display: block;
@@ -750,82 +929,31 @@ hr {
     background-color: #122035;
 }
 
-.highlight-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 5%;
-}
-
-.highlight-item h3 {
-    font-size: 1.25rem;
-}
-
-.bento-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-top: 5%;
-}
-
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 5%;
-}
-
-.bento-grid__wide {
-    grid-column: span 2;
-}
-
-.social-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 5%;
-}
-
-.youtube-placeholder {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    background-color: #0a1628;
-    border-radius: 8px;
-    margin-top: 5%;
-}
-
-.youtube-placeholder span {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8fa3b8;
-    font-family: Karla;
-    padding: 1rem;
-    text-align: center;
-}
-
-.section-label {
-    font-family: Karla;
-    font-size: 20px;
-    color: #999999;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-}
-
 @media (max-width: 768px) {
     .highlight-grid,
+    .highlight-grid--2col,
     .bento-row,
-    .bento-grid,
-    .social-grid {
+    .bento-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-row {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
 
     .bento-grid__wide {
         grid-column: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-grid {
+        grid-template-columns: 1fr;
     }
 }
 
